@@ -1,0 +1,11 @@
+age_bracket,id,ip,lat,lng,opted_into_marketing,user_agent
+18-25,-1488102646737385255,113.186.40.85,21.3089,105.6049,True,Opera/8.64.(X11; Linux x86_64; ko-KR) Presto/2.9.190 Version/12.00
+41-55,927116283924533137,72.19.9.108,44.2726,-121.1739,False,Mozilla/5.0 (compatible; MSIE 5.0; Windows NT 10.0; Trident/3.0)
+26-40,-2704821039257218861,19.198.77.175,42.2399,-83.1508,True,Opera/8.21.(X11; Linux x86_64; et-EE) Presto/2.9.168 Version/12.00
+41-55,-2262118822850144429,180.253.138.60,-7.2492,112.7508,False,Mozilla/5.0 (Windows; U; Windows NT 10.0) AppleWebKit/533.42.2 (KHTML, like Gecko) Version/5.0.3 Safari/533.42.2
+55+,5057001881796706930,106.133.162.82,34.6937,135.5022,False,Mozilla/5.0 (iPad; CPU iPad OS 7_1_2 like Mac OS X) AppleWebKit/532.2 (KHTML, like Gecko) FxiOS/12.4i7809.0 Mobile/73Z352 Safari/532.2
+55+,-565889546895298658,159.18.99.103,43.7001,-79.4163,False,Mozilla/5.0 (iPhone; CPU iPhone OS 6_1_6 like Mac OS X) AppleWebKit/534.2 (KHTML, like Gecko) CriOS/18.0.854.0 Mobile/96S118 Safari/534.2
+26-40,7106518809264545399,110.176.32.194,30.2936,120.1614,True,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_0) AppleWebKit/534.2 (KHTML, like Gecko) Chrome/47.0.885.0 Safari/534.2
+26-40,-5083407409009254199,70.4.254.178,39.2904,-76.6122,True,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_7) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/28.0.842.0 Safari/535.2
+18-25,8335730206729913085,147.241.254.65,31.1171,-97.7278,False,Opera/9.24.(Windows NT 6.2; ayc-PE) Presto/2.9.189 Version/10.00
+55+,-6082446089382753502,192.72.2.198,44.0928,-121.2936,True,Opera/8.49.(X11; Linux i686; st-ZA) Presto/2.9.179 Version/10.00

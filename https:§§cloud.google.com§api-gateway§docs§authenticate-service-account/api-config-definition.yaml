@@ -1,0 +1,37 @@
+# openapi2-functions.yaml
+swagger: "2.0"
+info:
+  title: obar1-api-000
+  description: Sample API on API Gateway with a Google Cloud Functions backend
+  version: 1.0.0
+schemes:
+  - https
+produces:
+  - application/json
+paths:
+  /hello:
+    get:
+      summary: Greet a user
+      operationId: hello
+      x-google-backend:
+        address: https://us-central1-coherent-vim-317506.cloudfunctions.net/hello_get
+      responses:
+        "200":
+          description: A successful response
+          schema:
+            type: string
+        "400":
+          description: A error response
+      security:
+        - obar1-api-oauth: []
+securityDefinitions:
+  obar1-api-oauth:
+      authorizationUrl: ""
+      flow: "implicit"
+      type: "oauth2"
+      x-google-issuer: "sa-oauth-api-id@coherent-vim-317506.iam.gserviceaccount.com"
+      x-google-jwks_uri: "https://www.googleapis.com/robot/v1/metadata/x509/sa-oauth-api-id@coherent-vim-317506.iam.gserviceaccount.com"
+      x-google-audiences : "coherent-vim-317506"
+
+
+

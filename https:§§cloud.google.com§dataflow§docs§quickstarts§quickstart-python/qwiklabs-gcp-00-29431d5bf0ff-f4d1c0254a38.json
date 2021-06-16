@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "qwiklabs-gcp-00-xx",
+  "private_key_id": "f4dxx",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIExxx1y3baVjE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "df-853@qwiklabs-gcp-00-29431d5bf0ff.iam.gserviceaccount.com",
+  "client_id": "100xx",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/df-853%40qwiklabs-gcp-00-29431d5bf0ff.iam.gserviceaccount.com"
+}

@@ -1,0 +1,5 @@
+type: map
+repo:
+  path: /Users/mamat/git/obar1/https-cloud.google.com.git
+  map_md: map.md
+  sorted : false

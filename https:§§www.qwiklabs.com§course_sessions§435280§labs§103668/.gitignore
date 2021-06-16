@@ -1,0 +1,4 @@
+df-env/
+training-data-analyst/
+!src/
+!runme.sh
