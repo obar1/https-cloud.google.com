@@ -11,8 +11,9 @@ go on the https://cloud.google.com/
 - add the readme.md with summary/note/code samples
 
 ex
+
 ```bash
 section=https:§§cloud.google.com§dataflow
-mkdir -p $section & touch $section/readme.md
+mkdir -p $section && touch $section/readme.md
 ls -1
 ```
