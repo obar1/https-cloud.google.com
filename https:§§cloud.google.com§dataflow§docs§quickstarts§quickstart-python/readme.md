@@ -18,11 +18,15 @@ create service account
 - srv account id
 - srv account description
 - create role // basic owner
+![](2021-06-17-08-55-48.png)
 
 create svr account key
 - add key // json type
 - save 
+![](2021-06-17-08-56-16.png)
 - set  GOOGLE_APPLICATION_CREDENTIALS // path to  the json file saved
+
+example from qwiklabs project (here)[qwiklabs-gcp-00-29431d5bf0ff-f4d1c0254a38.json]
 
 create cloud storage bucket
 - name 
@@ -31,6 +35,8 @@ create cloud storage bucket
 - access control 
 
 ## Set up your environment
+locally in your machine 
+TODO: check or on google console shell 
 
 > pyhton2 not longer supported
 
@@ -70,6 +76,18 @@ general execution
 
 snippet [here](run_pipeline_dataflow_svr.sh)
 
+## Sample run on gcp
+
+```
+\curl -sL \
+  "https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh" > \
+  "Miniconda3.sh"
+Install Miniconda by entering:
+
+bash Miniconda3.sh
+```
+
+
 ## View your results
 
 verify pipeline is running and the results
@@ -103,3 +121,4 @@ python wordcount_mod.py --output wordcount_mod_outputs
 ## Clean up
 delete resources
 -  bucket
+
