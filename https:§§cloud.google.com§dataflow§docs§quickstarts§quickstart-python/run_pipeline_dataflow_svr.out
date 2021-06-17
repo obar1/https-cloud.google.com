@@ -1,0 +1,129 @@
+(py37) mamat@FVFF93ACQ05N https:§§cloud.google.com§dataflow§docs§quickstarts§quickstart-python % bash run_pipeline_dataflow_svr.sh
+INFO:apache_beam.internal.gcp.auth:Setting socket default timeout to 60 seconds.
+INFO:apache_beam.internal.gcp.auth:socket default timeout is 60.0 seconds.
+INFO:oauth2client.transport:Attempting refresh to obtain initial access_token
+INFO:oauth2client.client:Refreshing access_token
+INFO:apache_beam.runners.portability.stager:Downloading source distribution of the SDK from PyPi
+INFO:apache_beam.runners.portability.stager:Executing command: ['/opt/homebrew/Caskroom/miniconda/base/envs/py37/bin/python', '-m', 'pip', 'download', '--dest', '/var/folders/l3/ryj426dn335__x8fkmcz6g380000gq/T/tmp5444hdwm', 'apache-beam==2.29.0', '--no-deps', '--no-binary', ':all:']
+INFO:apache_beam.runners.portability.stager:Staging SDK sources from PyPI: dataflow_python_sdk.tar
+INFO:apache_beam.runners.portability.stager:Downloading binary distribution of the SDK from PyPi
+INFO:apache_beam.runners.portability.stager:Executing command: ['/opt/homebrew/Caskroom/miniconda/base/envs/py37/bin/python', '-m', 'pip', 'download', '--dest', '/var/folders/l3/ryj426dn335__x8fkmcz6g380000gq/T/tmp5444hdwm', 'apache-beam==2.29.0', '--no-deps', '--only-binary', ':all:', '--python-version', '37', '--implementation', 'cp', '--abi', 'cp37m', '--platform', 'manylinux1_x86_64']
+INFO:apache_beam.runners.portability.stager:Staging binary distribution of the SDK from PyPI: apache_beam-2.29.0-cp37-cp37m-manylinux1_x86_64.whl
+WARNING:root:Make sure that locally built Python SDK docker image has Python 3.7 interpreter.
+INFO:root:Default Python SDK image for environment is apache/beam_python3.7_sdk:2.29.0
+INFO:root:Using provided Python SDK container image: gcr.io/cloud-dataflow/v1beta3/python37:2.29.0
+INFO:root:Python SDK container image set to "gcr.io/cloud-dataflow/v1beta3/python37:2.29.0" for Docker environment
+INFO:apache_beam.runners.dataflow.internal.apiclient:Defaulting to the temp_location as staging_location: gs://qwiklabs-gcp-00-29431d5bf0ff/tmp/
+INFO:apache_beam.runners.dataflow.internal.apiclient:Starting GCS upload to gs://qwiklabs-gcp-00-29431d5bf0ff/tmp/beamapp-mamat-0617071748-823137.1623914268.823341/pipeline.pb...
+INFO:apache_beam.runners.dataflow.internal.apiclient:Completed GCS upload to gs://qwiklabs-gcp-00-29431d5bf0ff/tmp/beamapp-mamat-0617071748-823137.1623914268.823341/pipeline.pb in 0 seconds.
+INFO:apache_beam.runners.dataflow.internal.apiclient:Starting GCS upload to gs://qwiklabs-gcp-00-29431d5bf0ff/tmp/beamapp-mamat-0617071748-823137.1623914268.823341/dataflow_python_sdk.tar...
+INFO:apache_beam.runners.dataflow.internal.apiclient:Completed GCS upload to gs://qwiklabs-gcp-00-29431d5bf0ff/tmp/beamapp-mamat-0617071748-823137.1623914268.823341/dataflow_python_sdk.tar in 1 seconds.
+INFO:apache_beam.runners.dataflow.internal.apiclient:Starting GCS upload to gs://qwiklabs-gcp-00-29431d5bf0ff/tmp/beamapp-mamat-0617071748-823137.1623914268.823341/apache_beam-2.29.0-cp37-cp37m-manylinux1_x86_64.whl...
+INFO:apache_beam.runners.dataflow.internal.apiclient:Completed GCS upload to gs://qwiklabs-gcp-00-29431d5bf0ff/tmp/beamapp-mamat-0617071748-823137.1623914268.823341/apache_beam-2.29.0-cp37-cp37m-manylinux1_x86_64.whl in 10 seconds.
+INFO:apache_beam.runners.dataflow.internal.apiclient:Starting GCS upload to gs://qwiklabs-gcp-00-29431d5bf0ff/tmp/beamapp-mamat-0617071748-823137.1623914268.823341/pickled_main_session...
+INFO:apache_beam.runners.dataflow.internal.apiclient:Completed GCS upload to gs://qwiklabs-gcp-00-29431d5bf0ff/tmp/beamapp-mamat-0617071748-823137.1623914268.823341/pickled_main_session in 0 seconds.
+INFO:apache_beam.runners.dataflow.internal.apiclient:Create job: <Job
+ createTime: '2021-06-17T07:18:05.001536Z'
+ currentStateTime: '1970-01-01T00:00:00Z'
+ id: '2021-06-17_00_18_03-981136861245522895'
+ location: 'us-central1'
+ name: 'beamapp-mamat-0617071748-823137'
+ projectId: 'qwiklabs-gcp-00-29431d5bf0ff'
+ stageStates: []
+ startTime: '2021-06-17T07:18:05.001536Z'
+ steps: []
+ tempFiles: []
+ type: TypeValueValuesEnum(JOB_TYPE_BATCH, 1)>
+INFO:apache_beam.runners.dataflow.internal.apiclient:Created job with id: [2021-06-17_00_18_03-981136861245522895]
+INFO:apache_beam.runners.dataflow.internal.apiclient:Submitted job: 2021-06-17_00_18_03-981136861245522895
+INFO:apache_beam.runners.dataflow.internal.apiclient:To access the Dataflow monitoring console, please navigate to https://console.cloud.google.com/dataflow/jobs/us-central1/2021-06-17_00_18_03-981136861245522895?project=qwiklabs-gcp-00-29431d5bf0ff
+INFO:apache_beam.runners.dataflow.dataflow_runner:Job 2021-06-17_00_18_03-981136861245522895 is in state JOB_STATE_PENDING
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:07.329Z: JOB_MESSAGE_DETAILED: Autoscaling is enabled for job 2021-06-17_00_18_03-981136861245522895. The number of workers will be between 1 and 1000.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:07.446Z: JOB_MESSAGE_DETAILED: Autoscaling was automatically enabled for job 2021-06-17_00_18_03-981136861245522895.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:09.091Z: JOB_MESSAGE_BASIC: Worker configuration: n1-standard-1 in us-central1-a.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:09.798Z: JOB_MESSAGE_DETAILED: Expanding CoGroupByKey operations into optimizable parts.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:09.839Z: JOB_MESSAGE_DEBUG: Combiner lifting skipped for step Write/Write/WriteImpl/GroupByKey: GroupByKey not followed by a combiner.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:09.917Z: JOB_MESSAGE_DETAILED: Expanding GroupByKey operations into optimizable parts.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:09.954Z: JOB_MESSAGE_DETAILED: Lifting ValueCombiningMappingFns into MergeBucketsMappingFns
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.048Z: JOB_MESSAGE_DEBUG: Annotating graph with Autotuner information.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.092Z: JOB_MESSAGE_DETAILED: Fusing adjacent ParDo, Read, Write, and Flatten operations
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.128Z: JOB_MESSAGE_DETAILED: Fusing consumer Split into Read/Read
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.158Z: JOB_MESSAGE_DETAILED: Fusing consumer PairWIthOne into Split
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.212Z: JOB_MESSAGE_DETAILED: Fusing consumer GroupAndSum/GroupByKey+GroupAndSum/Combine/Partial into PairWIthOne
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.244Z: JOB_MESSAGE_DETAILED: Fusing consumer GroupAndSum/GroupByKey/Reify into GroupAndSum/GroupByKey+GroupAndSum/Combine/Partial
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.275Z: JOB_MESSAGE_DETAILED: Fusing consumer GroupAndSum/GroupByKey/Write into GroupAndSum/GroupByKey/Reify
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.300Z: JOB_MESSAGE_DETAILED: Fusing consumer GroupAndSum/Combine into GroupAndSum/GroupByKey/Read
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.331Z: JOB_MESSAGE_DETAILED: Fusing consumer GroupAndSum/Combine/Extract into GroupAndSum/Combine
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.359Z: JOB_MESSAGE_DETAILED: Fusing consumer Format into GroupAndSum/Combine/Extract
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.404Z: JOB_MESSAGE_DETAILED: Fusing consumer Write/Write/WriteImpl/WindowInto(WindowIntoFn) into Format
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.439Z: JOB_MESSAGE_DETAILED: Fusing consumer Write/Write/WriteImpl/WriteBundles/WriteBundles into Write/Write/WriteImpl/WindowInto(WindowIntoFn)
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.473Z: JOB_MESSAGE_DETAILED: Fusing consumer Write/Write/WriteImpl/Pair into Write/Write/WriteImpl/WriteBundles/WriteBundles
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.517Z: JOB_MESSAGE_DETAILED: Fusing consumer Write/Write/WriteImpl/GroupByKey/Reify into Write/Write/WriteImpl/Pair
+INFO:apache_beam.runners.dataflow.dataflow_runner:Job 2021-06-17_00_18_03-981136861245522895 is in state JOB_STATE_RUNNING
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.552Z: JOB_MESSAGE_DETAILED: Fusing consumer Write/Write/WriteImpl/GroupByKey/Write into Write/Write/WriteImpl/GroupByKey/Reify
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.578Z: JOB_MESSAGE_DETAILED: Fusing consumer Write/Write/WriteImpl/GroupByKey/GroupByWindow into Write/Write/WriteImpl/GroupByKey/Read
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.610Z: JOB_MESSAGE_DETAILED: Fusing consumer Write/Write/WriteImpl/Extract into Write/Write/WriteImpl/GroupByKey/GroupByWindow
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.643Z: JOB_MESSAGE_DETAILED: Fusing consumer Write/Write/WriteImpl/InitializeWrite into Write/Write/WriteImpl/DoOnce/Read
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.675Z: JOB_MESSAGE_DEBUG: Workflow config is missing a default resource spec.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.706Z: JOB_MESSAGE_DEBUG: Adding StepResource setup and teardown to workflow graph.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.743Z: JOB_MESSAGE_DEBUG: Adding workflow start and stop steps.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.778Z: JOB_MESSAGE_DEBUG: Assigning stage ids.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:10.949Z: JOB_MESSAGE_DEBUG: Executing wait step start35
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:11.012Z: JOB_MESSAGE_BASIC: Executing operation Write/Write/WriteImpl/DoOnce/Read+Write/Write/WriteImpl/InitializeWrite
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:11.041Z: JOB_MESSAGE_BASIC: Executing operation GroupAndSum/GroupByKey/Create
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:11.054Z: JOB_MESSAGE_DEBUG: Starting worker pool setup.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:11.088Z: JOB_MESSAGE_BASIC: Starting 1 workers in us-central1-a...
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:11.444Z: JOB_MESSAGE_BASIC: Finished operation GroupAndSum/GroupByKey/Create
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:11.529Z: JOB_MESSAGE_DEBUG: Value "GroupAndSum/GroupByKey/Session" materialized.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:18:11.611Z: JOB_MESSAGE_BASIC: Executing operation Read/Read+Split+PairWIthOne+GroupAndSum/GroupByKey+GroupAndSum/Combine/Partial+GroupAndSum/GroupByKey/Reify+GroupAndSum/GroupByKey/Write
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:19:02.761Z: JOB_MESSAGE_DETAILED: Autoscaling: Raised the number of workers to 1 based on the rate of progress in the currently running stage(s).
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:19:32.300Z: JOB_MESSAGE_DETAILED: Workers have started successfully.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:19:32.329Z: JOB_MESSAGE_DETAILED: Workers have started successfully.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:27.429Z: JOB_MESSAGE_BASIC: Finished operation Write/Write/WriteImpl/DoOnce/Read+Write/Write/WriteImpl/InitializeWrite
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:27.488Z: JOB_MESSAGE_DEBUG: Value "Write/Write/WriteImpl/DoOnce/Read.out" materialized.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:27.517Z: JOB_MESSAGE_DEBUG: Value "Write/Write/WriteImpl/InitializeWrite.out" materialized.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:27.583Z: JOB_MESSAGE_BASIC: Executing operation Write/Write/WriteImpl/WriteBundles/_UnpickledSideInput(InitializeWrite.out.0)
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:27.613Z: JOB_MESSAGE_BASIC: Executing operation Write/Write/WriteImpl/FinalizeWrite/_UnpickledSideInput(InitializeWrite.out.0)
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:27.637Z: JOB_MESSAGE_BASIC: Finished operation Write/Write/WriteImpl/WriteBundles/_UnpickledSideInput(InitializeWrite.out.0)
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:27.642Z: JOB_MESSAGE_BASIC: Executing operation Write/Write/WriteImpl/PreFinalize/_UnpickledSideInput(InitializeWrite.out.0)
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:27.663Z: JOB_MESSAGE_BASIC: Finished operation Write/Write/WriteImpl/FinalizeWrite/_UnpickledSideInput(InitializeWrite.out.0)
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:27.692Z: JOB_MESSAGE_BASIC: Finished operation Write/Write/WriteImpl/PreFinalize/_UnpickledSideInput(InitializeWrite.out.0)
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:27.729Z: JOB_MESSAGE_DEBUG: Value "Write/Write/WriteImpl/WriteBundles/_UnpickledSideInput(InitializeWrite.out.0).output" materialized.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:27.787Z: JOB_MESSAGE_DEBUG: Value "Write/Write/WriteImpl/FinalizeWrite/_UnpickledSideInput(InitializeWrite.out.0).output" materialized.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:27.814Z: JOB_MESSAGE_DEBUG: Value "Write/Write/WriteImpl/PreFinalize/_UnpickledSideInput(InitializeWrite.out.0).output" materialized.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:30.690Z: JOB_MESSAGE_BASIC: Finished operation Read/Read+Split+PairWIthOne+GroupAndSum/GroupByKey+GroupAndSum/Combine/Partial+GroupAndSum/GroupByKey/Reify+GroupAndSum/GroupByKey/Write
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:30.760Z: JOB_MESSAGE_BASIC: Executing operation GroupAndSum/GroupByKey/Close
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:30.821Z: JOB_MESSAGE_BASIC: Finished operation GroupAndSum/GroupByKey/Close
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:30.889Z: JOB_MESSAGE_BASIC: Executing operation Write/Write/WriteImpl/GroupByKey/Create
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:31.044Z: JOB_MESSAGE_BASIC: Finished operation Write/Write/WriteImpl/GroupByKey/Create
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:31.131Z: JOB_MESSAGE_DEBUG: Value "Write/Write/WriteImpl/GroupByKey/Session" materialized.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:31.196Z: JOB_MESSAGE_BASIC: Executing operation GroupAndSum/GroupByKey/Read+GroupAndSum/Combine+GroupAndSum/Combine/Extract+Format+Write/Write/WriteImpl/WindowInto(WindowIntoFn)+Write/Write/WriteImpl/WriteBundles/WriteBundles+Write/Write/WriteImpl/Pair+Write/Write/WriteImpl/GroupByKey/Reify+Write/Write/WriteImpl/GroupByKey/Write
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:42.767Z: JOB_MESSAGE_BASIC: Finished operation GroupAndSum/GroupByKey/Read+GroupAndSum/Combine+GroupAndSum/Combine/Extract+Format+Write/Write/WriteImpl/WindowInto(WindowIntoFn)+Write/Write/WriteImpl/WriteBundles/WriteBundles+Write/Write/WriteImpl/Pair+Write/Write/WriteImpl/GroupByKey/Reify+Write/Write/WriteImpl/GroupByKey/Write
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:42.851Z: JOB_MESSAGE_BASIC: Executing operation Write/Write/WriteImpl/GroupByKey/Close
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:42.898Z: JOB_MESSAGE_BASIC: Finished operation Write/Write/WriteImpl/GroupByKey/Close
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:42.961Z: JOB_MESSAGE_BASIC: Executing operation Write/Write/WriteImpl/GroupByKey/Read+Write/Write/WriteImpl/GroupByKey/GroupByWindow+Write/Write/WriteImpl/Extract
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:53.441Z: JOB_MESSAGE_BASIC: Finished operation Write/Write/WriteImpl/GroupByKey/Read+Write/Write/WriteImpl/GroupByKey/GroupByWindow+Write/Write/WriteImpl/Extract
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:53.530Z: JOB_MESSAGE_DEBUG: Value "Write/Write/WriteImpl/Extract.out" materialized.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:53.604Z: JOB_MESSAGE_BASIC: Executing operation Write/Write/WriteImpl/FinalizeWrite/_UnpickledSideInput(Extract.out.0)
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:53.640Z: JOB_MESSAGE_BASIC: Executing operation Write/Write/WriteImpl/PreFinalize/_UnpickledSideInput(Extract.out.0)
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:53.649Z: JOB_MESSAGE_BASIC: Finished operation Write/Write/WriteImpl/FinalizeWrite/_UnpickledSideInput(Extract.out.0)
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:53.688Z: JOB_MESSAGE_BASIC: Finished operation Write/Write/WriteImpl/PreFinalize/_UnpickledSideInput(Extract.out.0)
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:53.695Z: JOB_MESSAGE_DEBUG: Value "Write/Write/WriteImpl/FinalizeWrite/_UnpickledSideInput(Extract.out.0).output" materialized.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:53.769Z: JOB_MESSAGE_DEBUG: Value "Write/Write/WriteImpl/PreFinalize/_UnpickledSideInput(Extract.out.0).output" materialized.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:53.862Z: JOB_MESSAGE_BASIC: Executing operation Write/Write/WriteImpl/PreFinalize/PreFinalize
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:58.218Z: JOB_MESSAGE_BASIC: Finished operation Write/Write/WriteImpl/PreFinalize/PreFinalize
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:58.302Z: JOB_MESSAGE_DEBUG: Value "Write/Write/WriteImpl/PreFinalize.out" materialized.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:58.371Z: JOB_MESSAGE_BASIC: Executing operation Write/Write/WriteImpl/FinalizeWrite/_UnpickledSideInput(PreFinalize.out.0)
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:58.421Z: JOB_MESSAGE_BASIC: Finished operation Write/Write/WriteImpl/FinalizeWrite/_UnpickledSideInput(PreFinalize.out.0)
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:58.501Z: JOB_MESSAGE_DEBUG: Value "Write/Write/WriteImpl/FinalizeWrite/_UnpickledSideInput(PreFinalize.out.0).output" materialized.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:21:58.555Z: JOB_MESSAGE_BASIC: Executing operation Write/Write/WriteImpl/FinalizeWrite/FinalizeWrite
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:22:02.356Z: JOB_MESSAGE_BASIC: Finished operation Write/Write/WriteImpl/FinalizeWrite/FinalizeWrite
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:22:02.453Z: JOB_MESSAGE_DEBUG: Executing success step success33
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:22:02.524Z: JOB_MESSAGE_DETAILED: Cleaning up.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:22:02.568Z: JOB_MESSAGE_DEBUG: Starting worker pool teardown.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:22:02.589Z: JOB_MESSAGE_BASIC: Stopping worker pool...
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:22:49.668Z: JOB_MESSAGE_DETAILED: Autoscaling: Resized worker pool from 1 to 0.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:22:49.710Z: JOB_MESSAGE_BASIC: Worker pool stopped.
+INFO:apache_beam.runners.dataflow.dataflow_runner:2021-06-17T07:22:49.752Z: JOB_MESSAGE_DEBUG: Tearing down pending resources...
+INFO:apache_beam.runners.dataflow.dataflow_runner:Job 2021-06-17_00_18_03-981136861245522895 is in state JOB_STATE_DONE
+(py37) mamat@FVFF93ACQ05N https:§§cloud.google.com§dataflow§docs§quickstarts§quickstart-python %

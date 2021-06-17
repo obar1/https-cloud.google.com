@@ -78,15 +78,17 @@ snippet [here](run_pipeline_dataflow_svr.sh)
 
 ## Sample run on gcp
 
-```
-\curl -sL \
-  "https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh" > \
-  "Miniconda3.sh"
-Install Miniconda by entering:
+add dataflow to srv account
+![](2021-06-17-09-20-35.png)
 
-bash Miniconda3.sh
-```
+![](2021-06-17-09-19-10.png)
+![](2021-06-17-09-20-02.png)
 
+execution
+[here](run_pipeline_dataflow_svr.out)
+
+bucket
+![](2021-06-17-09-25-27.png)
 
 ## View your results
 
