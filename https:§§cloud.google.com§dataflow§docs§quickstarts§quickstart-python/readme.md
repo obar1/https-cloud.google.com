@@ -96,8 +96,9 @@ check code [here](wordcount_mod.py)
 
 run with 
 
-python wordcount.py --output wordcount_mod_outputs
+python wordcount_mod.py --output wordcount_mod_outputs
 
+![](2021-06-17-07-38-08.png)
 
 ## Clean up
 delete resources

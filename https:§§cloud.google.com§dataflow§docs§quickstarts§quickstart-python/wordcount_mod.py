@@ -75,8 +75,8 @@ def run(argv=None, save_main_session=True):
     counts = (
         lines
         | 'Split' >> (beam.ParDo(WordExtractingDoFn()).with_output_types(str))
-        | 'LowerCase' >> beam.Map(str.lower)
-        | 'PairWIthOne' >> beam.Map(lambda x: (x, 1))
+        | 'LowerCase' >> beam.Map(lambda word: str.lower(word))
+        | 'PairWIthOne' >> beam.Map(lambda word: (word, 1))
         | 'GroupAndSum' >> beam.CombinePerKey(sum))
 
     # Format the counts into a PCollection of strings.
