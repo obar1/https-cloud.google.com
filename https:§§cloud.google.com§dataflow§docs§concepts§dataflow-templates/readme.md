@@ -1,7 +1,7 @@
 # Dataflow templates
 
 stage pipelines def and run them using 
-- gcloud cmdn line
+- gcloud cmd line
 - rest api calls
 - gcloud console
 
@@ -58,4 +58,5 @@ execution graph built at runtime
  
 
 (base) mamat@FVFF93ACQ05N https-cloud.google.com.com.git % gcloud dataflow --help
+
 ![](2021-06-17-16-10-00.png)
