@@ -204,7 +204,7 @@ gcloud dataflow flex-template build $TEMPLATE_PATH \
 
 ## Running a Flex Template pipeline
 
-- [X] invoke the flex templatye
+- [X] invoke the flex template
 
 a) gcloud
 ```
