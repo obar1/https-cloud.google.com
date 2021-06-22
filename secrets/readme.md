@@ -4,6 +4,6 @@
 TODO: add here 
 > and make sure yo u never check in :P
 
-- [X] [here](./runme.template) 
-TODO: clone it as ./runme.sh
+- [X] `template` for secrets
+TODO: clone `runme.template`  as `runme.sh`
 TODO: review the values

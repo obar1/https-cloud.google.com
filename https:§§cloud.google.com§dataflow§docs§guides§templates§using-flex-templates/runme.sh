@@ -1,30 +1,49 @@
 #!/usr/bin/env bash
 
-# basic scripts for readme.md
+# hands-on readme.md
+source '../tools.sh'
+SECTION=https:§§cloud.google.com§dataflow§docs§guides§templates§using-flex-templates
+ME='runme.sh'
+
+### INFO
+
+info "$BASE_PATH/$SECTION/$ME"
 
 ### INIT
 
-set -eu
-# set -x #verbose 
- 
-check_secrets() {
+function load_secrets() {
    source '../secrets/runme.sh'
-   echo "$PROJECT_ID"
-   echo "$GOOGLE_APPLICATION_CREDENTIALS"
 }
 
-check_secrets
+load_secrets
 
-set_local(){ 
+function set_local() {
    gcloud config set compute/region us-central1
-
-# # list enabled api
-# gcloud services list
 }
 
-set_local
+# set_local
+
+function list_api() {
+   # list enabled api
+   gcloud services list
+}
+
+# list_api
 
 ### Create a Cloud Storage bucket
 
-export BUCKET="my-storage-bucket-$PROJECT_ID"
-gsutil mb gs://"$BUCKET"
+function create_bucket() {
+   export BUCKET_ID="my-storage-bucket-$PROJECT_ID"
+   gsutil mb gs://"$BUCKET_ID"
+}
+
+# create_bucket
+
+function list_bucket() {
+   gsutil ls
+
+   export BUCKET_ID="my-storage-bucket-$PROJECT_ID"
+   gsutil ls -r gs://"$BUCKET_ID"/**
+}
+
+list_bucket
