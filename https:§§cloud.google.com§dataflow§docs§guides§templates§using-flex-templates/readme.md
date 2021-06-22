@@ -77,6 +77,9 @@ export SUBSCRIPTION="ratings"
 gcloud pubsub topics create $TOPIC
 gcloud pubsub subscriptions create --topic $TOPIC $SUBSCRIPTION
 ```
+![](2021-06-22-09-51-02.png)
+
+https://cloud.google.com/sdk/gcloud/reference/pubsub/topics/create
 
 ### Create a Cloud Scheduler job
 
@@ -93,14 +96,16 @@ gcloud scheduler jobs create pubsub negative-ratings-publisher \
   --topic="$TOPIC" \
   --message-body='{"url": "https://beam.apache.org/", "review": "negative"}'
 
-gcloud scheduler jobs run negative-ratings-publisher
 ```
 
 run the cloud scheduler
 
 ```
 gcloud scheduler jobs run positive-ratings-publisher
+gcloud scheduler jobs run negative-ratings-publisher
 ```
+
+![](2021-06-22-09-54-44.png)
 
 ### Create a BigQuery dataset
 
@@ -113,6 +118,7 @@ export TABLE="streaming_beam_sql"
 
 bq mk --dataset "$PROJECT:$DATASET"
 ```
+![](2021-06-22-11-14-04.png)
 
 ## Downloading the code sample
 
