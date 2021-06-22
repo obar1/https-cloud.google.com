@@ -18,3 +18,16 @@ section=https:§§cloud.google.com§dataflow
 mkdir -p $section && touch $section/readme.md
 ls -1
 ```
+
+## committing to repo
+
+- [X] just commit to master as this is a wiki -  `don't make it overcomplicated`
+- [X] use  `wip #issue_id` 
+https://github.com/obar1/https-cloud.google.com/issues
+so you can see the time spent in the 
+https://github.com/obar1/https-cloud.google.com/tree/main
+ that took overall
+
+> if we start to squash and merge yes the history looks better but you would loose those interesting info
+
+- [X] use `000` as commit msg for small improvements not related to actual learning
