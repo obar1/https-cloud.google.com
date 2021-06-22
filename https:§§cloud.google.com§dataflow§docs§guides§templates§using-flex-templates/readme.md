@@ -51,8 +51,6 @@ add `owner`
 ```
 export GOOGLE_APPLICATION_CREDENTIALS="KEY_PATH"
 ```
-TODO: add find to get automatically it 
-
 
 ## Creating the example source and sink
 
@@ -173,17 +171,26 @@ https://cloud.google.com/build/docs/kaniko-cache
 
   RUN pip install -U -r ./requirements.txt
 ```
+> the actual one is [here](streaming_beam/Dockerfile)
 
 > Job packages/dependencies that are to be installed must be referenced in the 'requirements' file.
 > Images starting with gcr.io/PROJECT/ are saved into your project's Container Registry
 
 - [X] build the image
 
-```
+```bash
 gcloud builds submit --tag $TEMPLATE_IMAGE .
 ```
 
 https://cloud.google.com/build/docs/quickstart-build#build_using_dockerfile
+
+![](2021-06-22-16-07-37.png)
+![](2021-06-22-16-11-24.png)
+
+activity
+![](2021-06-22-16-10-16.png)
+![](2021-06-22-16-13-59.png)
+![](2021-06-22-16-17-36.png)
 
 ## Creating a Flex Template
 
@@ -195,7 +202,7 @@ To run a template, you need to create a template spec file in a Cloud Storage co
 
 https://github.com/GoogleCloudPlatform/java-docs-samples/blob/master/dataflow/flex-templates/streaming_beam_sql/metadata.json
 
-> sample [here](./metadata.json)
+> sample copied [here](./streaming_beam/metadata.json)
 
 - [X] build the template in the bucket
 
@@ -207,6 +214,8 @@ gcloud dataflow flex-template build $TEMPLATE_PATH \
     --sdk-language "PYTHON" \
     --metadata-file "metadata.json"
 ```
+
+![](2021-06-22-16-39-07.png)
 
 ## Running a Flex Template pipeline
 
@@ -222,6 +231,7 @@ a) gcloud
     --parameters output_table="$PROJECT:$DATASET.$TABLE" \
     --region "$REGION"
 ```
+FIXME: the json sample has inputSubscription and outputTable actually 
 
 b) rest api
 
@@ -241,12 +251,24 @@ curl -X POST \
     }
   }'
 ```
+![](2021-06-22-16-50-31.png)
+![](2021-06-22-16-51-02.png)
 
-check data in bq
+the execution log are
+![](2021-06-22-18-04-45.png)
+ 
+ dataflow running 
+ ![](2021-06-22-18-12-18.png)
+
+- [X] check data in bq
 
 ```
 bq query --use_legacy_sql=false 'SELECT * FROM `'"$PROJECT.$DATASET.$TABLE"'`'
 ```
+
+![](2021-06-22-18-15-03.png)
+
+![](2021-06-22-18-18-13.png)
 
 ## Cleaning up
 

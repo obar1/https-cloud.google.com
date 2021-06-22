@@ -17,11 +17,12 @@ function load_secrets() {
 
 load_secrets
 
-function set_local() {
-   gcloud config set compute/region us-central1
+function set_region() {
+   export REGION="us-central1"
+   gcloud config set compute/region "$REGION"
 }
 
-set_local
+set_region
 
 function list_api() {
    # list enabled api
@@ -111,3 +112,71 @@ function mk_bigq(){
 }
 
 # mk_bigq
+
+## Python only: Creating and building a container image
+
+function set_template_set_template(){
+   export TEMPLATE_IMAGE="gcr.io/$PROJECT_ID/samples/dataflow/streaming-beam-sql:latest"
+   export TEMPLATE_PATH="gs://$BUCKET_ID/samples/dataflow/templates/streaming-beam-sql.json"
+}
+
+set_template_set_template
+
+function creating_and_building_container_image() {
+   cd streaming_beam || exit
+
+   gcloud config set builds/use_kaniko True
+   gcloud builds submit --tag "$TEMPLATE_IMAGE" .
+   gcloud builds list
+   cd ..
+}
+
+# creating_and_building_container_image
+
+## Creating a Flex Template
+function creating_flex_template() {
+   cd streaming_beam || exit
+   gcloud dataflow flex-template build "$TEMPLATE_PATH" \
+      --image "$TEMPLATE_IMAGE" \
+      --sdk-language "PYTHON" \
+      --metadata-file "metadata.json"
+   cd ..
+}
+
+# creating_flex_template
+
+## Running a Flex Template pipeline
+
+function running_flex_template() {
+  gcloud dataflow flex-template run "streaming-beam-$(date +%Y%m%d-%H%M%S)" \
+    --template-file-gcs-location "$TEMPLATE_PATH" \
+    --parameters input_subscription="projects/$PROJECT_ID/subscriptions/$SUBSCRIPTION" \
+    --parameters output_table="$PROJECT_ID:$DATASET.$TABLE" \
+    --region "$REGION"
+}
+
+# running_flex_template
+
+function check_data_bq() {
+   bq query --use_legacy_sql=false 'SELECT * FROM `'"$PROJECT_ID.$DATASET.$TABLE"'`'
+}
+
+# check_data_bq
+
+## Cleaning up
+
+function cleaning_up() {
+   gcloud scheduler jobs delete negative-ratings-publisher || true
+   gcloud scheduler jobs delete positive-ratings-publisher || true
+
+   gcloud pubsub subscriptions delete $SUBSCRIPTION || true
+   gcloud pubsub topics delete $TOPIC || true
+
+   bq rm -f -t "$PROJECT_ID:$DATASET.$TABLE" || true
+
+   bq rm -r -f -d "$PROJECT_ID:$DATASET" || true
+
+   gsutil rm -r "gs://$BUCKET_ID" || true
+}
+
+cleaning_up

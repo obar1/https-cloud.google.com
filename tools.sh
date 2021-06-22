@@ -2,7 +2,7 @@
 
 # some tools
 
-set -eu
+set -eu # to fail and exit on variables mathcing // safe
 # set -x #verbose 
 
 BASE_PATH=/Users/mamat/git/obar1/https-cloud.google.com.com.git
