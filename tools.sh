@@ -2,21 +2,33 @@
 
 # some tools
 
-set -eu # to fail and exit on variables mathcing // safe
-# set -x #verbose 
+# set -e
+set -u
+set -o pipefail
+# set -x #verbose
 
-BASE_PATH=/Users/mamat/git/obar1/https-cloud.google.com.com.git
 # FIXME: set your BASE_PATH
+BASE_PATH=/Users/mamat/git/obar1/https-cloud.google.com.com.git
+export BASE_PATH
+
 ME='tools.sh'
-
-function info() { # Source me to add func() to the env
-    grep 'function' "$1" | grep -v "#skip" #skip
-}
-
-function hello() { # hello
-    echo  'hello from obar1'
-}
+export ME
 
 ### INFO
 
-info "$BASE_PATH/$ME"
+function info() { # Source me to add func() to the env
+    # ex # info "$BASE_PATH/$ME"
+    grep 'function' "$1" | grep -v "#skip" #skip
+}
+
+function list_api() {
+    # list enabled api
+    gcloud services list
+}
+
+function list_bucket() {
+    # list bucket
+    # list_bucket || true
+    gsutil ls
+    gsutil ls -r gs://"$BUCKET_ID"/**
+}
