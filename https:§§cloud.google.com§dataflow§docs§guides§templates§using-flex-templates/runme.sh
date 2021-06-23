@@ -129,6 +129,8 @@ function cleaning_up() {
    gcloud pubsub subscriptions delete $SUBSCRIPTION || true
    gcloud pubsub topics delete $TOPIC || true
 
+   echo 'delete gcloud dataflow flex-template run '
+
    bq rm -f -t "$PROJECT_ID:$DATASET.$TABLE" || true
    bq rm -r -f -d "$PROJECT_ID:$DATASET" || true
 
