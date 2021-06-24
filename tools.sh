@@ -41,10 +41,10 @@ function dir_from_http() {
     # https:§§cloud.google.com§functions
 
     http_address="${1}"
-    echo $http_address
+    echo "$http_address"
 
     section="$(echo $http_address | sed 's/\//§/g')"
-    echo $section
+    echo "$section"
     export section
 }
 
@@ -53,6 +53,37 @@ function make_dir_section() {
     dir_from_http "${1}"
     mkdir -p "$section" && touch "$section"/readme.md
     echo "# ""$section" >>"$section"/readme.md
-    echo "> [here]($1)" >>"$section"/readme.md
+    echo "> $1" >>"$section"/readme.md
     cat "$section"/readme.md
+}
+
+function add_section_to_changelog(){
+    # input is http:// add to toc and add section
+    dir_from_http "${1}"
+    echo "- [ ] ${1}   [here](./$section/readme.md)" >> changelog.md
+    cat changelog.md
+}
+
+function convert_pdf_to_txt() {
+    # opt if you exported the http  contents to ped and put in section
+    dir_from_http "${1}"
+    pdftotext "$section"/readme.pdf "$section"/readme.pdf.txt
+    ls -r "$section"
+}
+
+function do_section() {
+    # main do to process a section
+    http_address="${1}"
+    make_dir_section "${http_address}"
+    add_section_to_changelog "${http_address}"
+
+    echo -n "convert_pdf_to_txt (y/n)? "
+    read answer
+
+    if [ "$answer" != "${answer#[Yy]}" ] ;then
+        echo Yes
+        convert_pdf_to_txt "${http_address}"
+    else
+        echo No
+    fi
 }

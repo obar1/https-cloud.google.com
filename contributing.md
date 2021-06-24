@@ -31,3 +31,14 @@ https://github.com/obar1/https-cloud.google.com/tree/main
 > if we start to squash and merge yes the history looks better but you would loose those interesting info
 
 - [X] use `000` as commit msg for small improvements not related to actual learning
+
+
+## local setup - mac
+
+> something to install
+
+
+```
+brew install xpdf
+
+```
