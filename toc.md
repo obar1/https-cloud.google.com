@@ -13,8 +13,9 @@
 - [X] https://cloud.google.com/dataflow/docs/guides/templates/creating-templates  [here](./https:§§cloud.google.com§dataflow§docs§guides§templates§creating-templates/readme.md)
 - [X] https://cloud.google.com/dataflow/docs/guides/templates/running-templates   [here](./https:§§cloud.google.com§dataflow§docs§guides§templates§running-templates/readme.md)
 - [X] https://cloud.google.com/dataflow/docs/guides/templates/using-flex-templates   [here](./https:§§cloud.google.com§dataflow§docs§guides§templates§using-flex-templates/readme.md)
-- [W] https://cloud.google.com/dataflow/docs/guides/templates/configuring-flex-templates   [here](./https:§§cloud.google.com§dataflow§docs§guides§templates§configuring-flex-templates/readme.md)
+- [ ] https://cloud.google.com/dataflow/docs/guides/templates/configuring-flex-templates   [here](./https:§§cloud.google.com§dataflow§docs§guides§templates§configuring-flex-templates/readme.md)
 
+-https://cloud.google.com/functions
 
 TODO: 
 
