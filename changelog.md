@@ -26,3 +26,5 @@ function do_section() {
 - [X] https://cloud.google.com/dataflow/docs/guides/templates/using-flex-templates   [here](./https:§§cloud.google.com§dataflow§docs§guides§templates§using-flex-templates/readme.md)
 - [W] https://cloud.google.com/dataflow/docs/guides/templates/configuring-flex-templates   [here](./https:§§cloud.google.com§dataflow§docs§guides§templates§configuring-flex-templates/readme.md)
 
+- [ ] https://cloud.google.com/functions   [here](./https:§§cloud.google.com§functions/readme.md)
+- [ ] https://cloud.google.com/functions/docs/quickstart-python   [here](./https:§§cloud.google.com§functions§docs§quickstart-python/readme.md)
