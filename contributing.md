@@ -10,7 +10,7 @@
 
 ```
 ex
-https://cloud.google.com/dataflow
+https://cloud.google.com/storage
 ```
 
 - create local folder and some placeholder for the section/link automatically 
@@ -33,10 +33,12 @@ function make_dir_section() { # mkdir and readme [dir_from_http]
 function add_section_to_changelog(){  # add is http://  to toc and add section [dir_from_http]
 function convert_pdf_to_txt() { # pdf export [dir_from_http]
 function do_section() { # main do to process a section  [http_address]
-
-# for https://cloud.google.com/storage
+```
+ex
+for https://cloud.google.com/storage
 ```
 
+```
 
 - (opt) save the page with https://chrome.google.com/webstore/detail/print-friendly-pdf/ohlencieiipommannpdfcmfdpjjmeolj/related or https://chrome.google.com/webstore/detail/htmlurl-to-pdf-with-pdfma/dlmgniacaacmbccdegkadebbaphkonpb 
 - add the readme.md with summary/note/code samples
@@ -63,5 +65,4 @@ https://github.com/obar1/https-cloud.google.com/tree/main
 
 ```
 brew install xpdf
-
 ```

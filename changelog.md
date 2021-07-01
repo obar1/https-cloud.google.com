@@ -28,3 +28,4 @@ function do_section() {
 - [X] https://cloud.google.com/functions   [here](./https:§§cloud.google.com§functions/readme.md)
 - [X] https://cloud.google.com/functions/docs/quickstart-python   [here](./https:§§cloud.google.com§functions§docs§quickstart-python/readme.md)
 - [ ] https://cloud.google.com/functions/docs/quickstart   [here](./https:§§cloud.google.com§functions§docs§quickstart/readme.md)
+- [ ] https://cloud.google.com/storage   [here](./https:§§cloud.google.com§storage/readme.md)
