@@ -2,3 +2,4 @@
 .idea/**
 *.pdf.txt
 __pycache__
+secrets.txt
