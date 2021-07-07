@@ -32,4 +32,7 @@ function do_section() {
 - [W] https://cloud.google.com/products  [here](./https:§§cloud.google.com§products/readme.md)
 - [X] https://cloud.google.com/sql   [here](./https:§§cloud.google.com§sql/readme.md)
 - [W] https://cloud.google.com/sql/docs/mysql/quickstart   [here](./https:§§cloud.google.com§sql§docs§mysql§quickstart/readme.md)
-- [ ] https://cloud.google.com/sql/docs/mysql/create-instance   [here](./https:§§cloud.google.com§sql§docs§mysql§create-instance/readme.md)
+- [W] https://cloud.google.com/sql/docs/mysql/create-instance   [here](./https:§§cloud.google.com§sql§docs§mysql§create-instance/readme.md)
+- [W] https://cloud.google.com/products/operations
+   [here](./https:§§cloud.google.com§products§operations/readme.md)
+- [W] https://google.qwiklabs.com/quests/35   [here](./https:§§google.qwiklabs.com§quests§35/readme.md)
