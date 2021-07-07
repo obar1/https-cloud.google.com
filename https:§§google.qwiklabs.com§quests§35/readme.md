@@ -17,11 +17,13 @@ https://googlecourses.qwiklabs.com/focuses/11617?parent=catalog
 
 ### Setup and requirements
 
+```
 qwiklabs-gcp-00-51b23664db49
 
 gcloud auth list
 
 gcloud config list project
+```
 
 ### Viewing Cloud Function logs & metrics in Cloud monitoring
 
@@ -32,6 +34,7 @@ TODO: doit
 
 ### Test Completed Task
 
+```
 wget 'https://github.com/tsenart/vegeta/releases/download/v6.3.0/vegeta-v6.3.0-linux-386.tar.gz'
 tar xvzf vegeta-v6.3.0-linux-386.tar.gz
 
@@ -43,6 +46,7 @@ echo "GET ${mycf}" |./vegeta attack -duration=300s > results.bin &
 1954
 cat results.bin
 kill 1954
+```
 
 ### Create logs-based metric
 
