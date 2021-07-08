@@ -36,3 +36,5 @@ function do_section() {
 - [W] https://cloud.google.com/products/operations
    [here](./https:§§cloud.google.com§products§operations/readme.md)
 - [W] https://google.qwiklabs.com/quests/35   [here](./https:§§google.qwiklabs.com§quests§35/readme.md)
+- [ ] https://google.qwiklabs.com/quests/81   [here](./https:§§google.qwiklabs.com§quests§81/readme.md)
+- [ ] https://cloud.google.com/logging   [here](./https:§§cloud.google.com§logging/readme.md)
