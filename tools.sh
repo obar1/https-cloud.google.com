@@ -56,6 +56,7 @@ function add_section_to_changelog(){  # add is http://  to toc and add section [
 
 function convert_pdf_to_txt() { # pdf export [dir_from_http]
     dir_from_http "${1}"
+    mv "${section}/*.pdf ${section}/readme.pdf"
     pdftotext "$section"/readme.pdf "$section"/readme.pdf.txt
     ls -r "$section"
 }

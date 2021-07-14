@@ -22,9 +22,9 @@ https://cloud.google.com/pubsub/docs/building-pubsub-messaging-system
 - real time distribution
 - replicating data among dbs
 - parallel processing of wf
-- enterpise server bus
-- refreshing distirbuted cache
-- load balacing reliability
+- enterprise server bus
+- refreshing distributed cache
+- load balancing reliability
 
 ## Pub/Sub or Pub/Sub Lite
 
@@ -67,14 +67,11 @@ Pub/Sub has many integrations with other Google Cloud products to create a fully
 
  ## Next steps
 
-TODO:
-- https://cloud.google.com/pubsub/docs/quickstart-console
 
+- https://cloud.google.com/pubsub/docs/quickstart-console
 TODO:
 - https://cloud.google.com/pubsub/architecture
-
 TODO:
 - https://cloud.google.com/pubsub/pricing
-
 TODO:
 - https://googlecourses.qwiklabs.com/focuses/11548?catalog_rank=%7B%22rank%22%3A6%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=11865106
