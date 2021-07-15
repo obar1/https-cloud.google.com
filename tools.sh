@@ -7,9 +7,6 @@
 BASE_PATH=/Users/mamat/git/obar1/https-cloud.google.com.com.git
 export BASE_PATH
 
-ME='tools.sh'
-export ME
-
 ### INIT
 
 function load_secrets() {
@@ -25,7 +22,8 @@ function set_region() {
 
 function info() { # print small help  [file]
     file="${1}"
-    grep 'function' "$file" | grep -v "#skip" #skip
+    # grep section ## or function with #
+    grep -E '##|function' "$file" | grep  "#" 
 }
 
 function list_api() { # list enabled api
@@ -85,3 +83,7 @@ function do_section() { # main do to process a section  [http_address]
         echo No
     fi
 }
+
+
+load_secrets
+set_region

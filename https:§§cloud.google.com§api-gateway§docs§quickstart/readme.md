@@ -10,99 +10,80 @@ gcloud config set project PROJECT_ID
 
 ## Enabling required services
 
-API Gateway requires that you enable the following Google services:
+all of them
 
-Name
-apigateway.googleapis.com
-servicemanagement.googleapis. com servicecontrol.googleapis.com
-
-Title API Gateway API Service Management API
-Service Control API
-
-1/10
-
-To confirm that the required services are enabled:
 gcloud services list
 
-If you do not see the required services listed, enable them:
-gcloud services enable apigateway.googleapis.com gcloud services enable servicemanagement.googleapis.com gcloud services enable servicecontrol.googleapis.com
-For more information about the gcloud services, see gcloud services.
 
-Deploying an API backend
+```
+gcloud services enable apigateway.googleapis.com 
+gcloud services enable servicemanagement.googleapis.com 
+gcloud services enable servicecontrol.googleapis.com
+```
+check https://cloud.google.com/sdk/gcloud/reference/services
+
+## Deploying an API backend
 
 API Gateway sits in front of a deployed backend service and handles all incoming requests. In this quickstart, API Gateway routes incoming calls to a Cloud Function backend named helloGET that contains the function shown below:
 
-/**
+https://cloud.google.com/functions/docs/quickstart
 
-* HTTP Cloud Function.
+![](2021-07-15-17-22-26.png)
 
-* This function is exported by index.js, and is executed when
-
-* you make an HTTP request to the deployed function's endpoint.
-
-*
-
-* @param {Object} req Cloud Function request context.
-
-*
-
-More info: https://expressjs.com/en/api.html#req
-
-* @param {Object} res Cloud Function response context.
-
-*
-
-More info: https://expressjs.com/en/api.html#res
-
-*/exports.helloGET = (req, res) => {
-
-res.send('Hello World!');
-
-};
-
-Follow the steps in Quickstart: Using the gcloud command-line tool to download the sample Cloud Functions code and deploy the Cloud Function backend service.
-
-Creating an API
+## Creating an API
 
 Now you are ready to create your API on API Gateway.
 
 1. Enter the following command, where:
 
-API_ID specifies the name of your API. See API ID requirements for API naming guidelines. PROJECT_ID specifies the name of your Google Cloud project.
+API_ID specifies the name of your API. 
+
+API ID requirements
+- Must have a maximum length of 63 characters.
+- Must contain only lowercase letters, numbers, or dashes.
+- Must not start with a dash.
+- Must not contain an underscore.
+
+```
 gcloud api-gateway apis create API_ID --project=PROJECT_ID
-
-For example:
+# ex
 gcloud api-gateway apis create my-api --project=my-project
+```
 
-2/10
+2. On successful completion, you can use the following command to view details about the new API:
 
-2. On successful completion, you can use the following command to view details about the new API:
+```
 gcloud api-gateway apis describe API_ID --project=PROJECT_ID
-For example:
+# For example:
 gcloud api-gateway apis describe my-api --project=my-project
-This command returns the following:
-createTime: '2020-02-29T21:52:20.297426875Z' displayName: my-api managedService: my-api-123abc456def1.apigateway.my-project.cloud.goog name: projects/my-project/locations/global/apis/my-api state: ACTIVE updateTime: '2020-02-29T21:52:20.647923711Z'
-Note the value of the managedService property. This value is used to enable your API in a subsequent step.
-Creating an API config
-Before API Gateway can be used to manage traffic to your deployed API backend, it needs an API config.
-You can create an API config using an OpenAPI spec that contains specialized annotations to define the desired API Gateway behavior. The OpenAPI spec used for this quickstart contains routing instructions to our Cloud Function backend:
-# openapi2-functions.yaml swagger: '2.0' info:
-title: API_ID optional-string description: Sample API on API Gateway with a Google Cloud Functions backend version: 1.0.0 schemes: - https produces: - application/json paths: /hello:
-get: summary: Greet a user operationId: hello x-google-backend: address: https://GCP_REGION-PROJECT_ID.cloudfunctions.net/helloGET responses: '200': description: A successful response schema: type: string
-To upload this OpenAPI spec and create an API config using the gcloud command line tool:
-3/10
+```
 
-1. From the command line, create a new file named openapi2-functions.yaml .
-2. Copy and paste the contents of the OpenAPI spec shown above into the newly created file.
+## Creating an API config
+
+Before API Gateway can be used to manage traffic to your deployed API backend, it needs an API config.
+
+ OpenAPI spec that contains specialized annotations to define the desired API Gateway  
+ 
+[here](./my-api.yaml.template)
+ 
+
+
 3. Edit the file as follows: 1. In the title field, replace API_ID with the name of your API and replace optional-string with a brief description of your choosing. The value of this field is used when minting API keys that grant access to this API. 2. In the address field, replace GCP_REGION with the GCP region of the deployed function and PROJECT_ID with the name of your Google Cloud project.
 4. Enter the following command, where:
-CONFIG_ID specifies the name of your API config. API_ID specifies the name of your API. PROJECT_ID specifies the name of your Google Cloud project. SERVICE_ACCOUNT_EMAIL specifies the service account created explicitly for creating API configs. For more information, see Configuring a service account.
+CONFIG_ID specifies the name of your API config. API_ID specifies the name of your API. PROJECT_ID specifies the name of your Google Cloud project. SERVICE_ACCOUNT_EMAIL specifies the service account created explicitly for creating API configs. For more information, see Configuring a service account. https://cloud.google.com/api-gateway/docs/configure-dev-env#configuring_a_service_account
+
+```
 gcloud api-gateway api-configs create CONFIG_ID \ --api=API_ID --openapi-spec=API_DEFINITION \ --project=PROJECT_ID --backend-auth-service-account=SERVICE_ACCOUNT_EMAIL
-For example:
+# For example:
 gcloud api-gateway api-configs create my-config \ --api=my-api --openapi-spec=openapi2-functions.yaml \ --project=my-project --backend-auth-service-account=0000000000000-
 compute@developer.gserviceaccount.com
+```
+
 This operation may take several minutes to complete as the API config is propagated to downstream systems. Creation of a complex API config could take up to ten minutes to complete successfully.
 Note: If you run this command and receive an error in the form FAILED_PRECONDITION: Service Account ... does not exist , see Configuring a service account to ensure that a service account is enabled for your project.
+
+https://cloud.google.com/api-gateway/docs/configure-dev-env#configuring_a_service_account
+
 4/10
 
 5. After the API config is created, you can view its details by running this command:

@@ -1,33 +1,13 @@
 #!/usr/bin/env bash
 
-# hands-on readme.md
-source "$BASE_PATH/tools.sh"
-SECTION=https:§§cloud.google.com§dataflow§docs§guides§templates§using-flex-templates
-export SECTION
+set -u
+set -o pipefail
 
-ME='runme.sh'
-export ME
-
-### INFO
-
-function helpme() {
-   info "$BASE_PATH/$SECTION/$ME"
-}
-
-### INIT
-
-function load_secrets() {
-   source "$BASE_PATH"/secrets/runme.sh
-}
-
-function set_region() {
-   export REGION="us-central1"
-   gcloud config set compute/region "$REGION"
-}
+source "${BASE_PATH}"/tools.sh
 
 ## Deploy a function
 
-function deploy_function() {
+function deploy_function() { #
    cd helloworld || exit
 
    gcloud functions deploy hello_get \
@@ -37,33 +17,29 @@ function deploy_function() {
 
 ## Test the function
 
-function test_function() {
+function test_function() { #
    gcloud functions describe hello_get
 }
 
 ## Delete the function
 
-function delete_function() {
+function delete_function() { #
    gcloud functions delete hello_get
 
 }
 
-##
-## params
-##
+# params
 
 case "${1}" in
-1 | 'r')
-   echo "run!" # function
+1 | 'r') ## run
    load_secrets
    set_region
    deploy_function
    test_function
    ;;
-2 | 'c')
-   echo "cleanup!" #function
+2 | 'c') ## clean up
    load_secrets
    delete_function
    ;;
-*) helpme ;;
+*) info "$0" ;;
 esac

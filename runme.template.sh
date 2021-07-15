@@ -1,34 +1,29 @@
 #!/usr/bin/env bash
-
 set -u
 set -o pipefail
 
 source "${BASE_PATH}"/tools.sh
 
-### Do smething
+## Do smething
 
-function do_something() {
+function do_something() { #
    echo "hello"
 }
 
 ## Cleaning up
 
-function cleaning_up() {
+function cleaning_up() { #
    echo '# gcloud xxx || true'
 }
 
-##
-## params
-##
+# params
 
 case "${1}" in
-1 | 'r')
-   echo "run!" # function
+1 | 'r') ## run
    do_something
    ;;
-2 | 'c')
-   echo "cleanup!" #function
+2 | 'c') ## clean up
    cleaning_up
    ;;
-*) helpme ;;
+*) info "$0" ;;
 esac
