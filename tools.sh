@@ -10,6 +10,17 @@ export BASE_PATH
 ME='tools.sh'
 export ME
 
+### INIT
+
+function load_secrets() {
+   source "${BASE_PATH}"/secrets/runme.sh
+}
+
+function set_region() {
+   export REGION="us-central1"
+   gcloud config set compute/region "$REGION"
+}
+
 ### INFO
 
 function info() { # print small help  [file]
@@ -65,7 +76,7 @@ function do_section() { # main do to process a section  [http_address]
     add_section_to_changelog "${http_address}"
 
     echo -n "convert_pdf_to_txt (y/n)? "
-    read answer
+    read -r answer
 
     if [ "$answer" != "${answer#[Yy]}" ] ;then
         echo Yes

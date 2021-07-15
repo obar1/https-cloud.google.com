@@ -1,33 +1,12 @@
 #!/usr/bin/env bash
+
 set -u
 set -o pipefail
 
-# hands-on runme template
-source "$BASE_PATH/tools.sh"
-SECTION=https:§§cloud.google.com§dataflow§docs§guides§templates§using-flex-templates
-export SECTION
+source "${BASE_PATH}"/tools.sh
 
-ME='runme.sh'
-export ME
+### Do smething
 
-### INFO
-
-function helpme() {
-   info "$BASE_PATH/$SECTION/$ME"
-}
-
-### INIT
-
-function load_secrets() {
-   source "$BASE_PATH"/secrets/runme.sh
-}
-
-function set_region() {
-   export REGION="us-central1"
-   gcloud config set compute/region "$REGION"
-}
-
-### Section
 function do_something() {
    echo "hello"
 }
