@@ -1,13 +1,9 @@
 #!/usr/bin/env bash
 
 # some tools
+# FIXME: source me on the prompt
 
-# set -e
-set -u
-set -o pipefail
-# set -x #verbose
-
-# FIXME: set your BASE_PATH
+# TODO: set your BASE_PATH
 BASE_PATH=/Users/mamat/git/obar1/https-cloud.google.com.com.git
 export BASE_PATH
 
@@ -46,6 +42,8 @@ function make_dir_section() { # mkdir and readme [dir_from_http]
     echo "# ""$section" >>"$section"/readme.md
     echo "> $1" >>"$section"/readme.md
     cat "$section"/readme.md
+
+    cat runme.template.sh >"$section"/runme.md
 }
 
 function add_section_to_changelog(){  # add is http://  to toc and add section [dir_from_http]

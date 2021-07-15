@@ -44,3 +44,4 @@ function do_section() {
 - [X] https://cloud.google.com/api-gateway/docs/about-api-gateway   [here](./https:§§cloud.google.com§api-gateway§docs§about-api-gateway/readme.md)
 - [W] https://cloud.google.com/api-gateway/docs   [here](./https:§§cloud.google.com§api-gateway§docs/readme.md)
 - [X] https://cloud.google.com/api-gateway/docs/architecture-overview   [here](./https:§§cloud.google.com§api-gateway§docs§architecture-overview/readme.md)
+- [X] https://cloud.google.com/api-gateway/docs/quickstart   [here](./https:§§cloud.google.com§api-gateway§docs§quickstart/readme.md)
