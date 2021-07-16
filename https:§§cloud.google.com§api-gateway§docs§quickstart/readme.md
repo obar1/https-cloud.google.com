@@ -94,8 +94,8 @@ gcloud api-gateway api-configs describe my-config \ --api=my-api --project=my-pr
 
 ![](2021-07-16-07-14-16.png)
 
-
 ## Creating a gateway
+
 Now deploy the API config on a gateway. Deploying an API config on a gateway defines an external URL that API clients can use to access your API. 
 
 ```
@@ -125,6 +125,7 @@ gcloud api-gateway gateways describe my-gateway \ --location=us-central1 --proje
 
 
 ## Testing your API deployment
+
 Now you can send requests to your API using the URL generated upon deployment of your gateway.
 
 
@@ -143,51 +144,73 @@ Hello World!
 You have successfully created and deployed an API Gateway!
 
 ## Securing access by using an API key
-To secure access to your API backend, generate an API key associated with your project and grant that key access to call your API. See Restricting API access with API keys for more information. If you do not already have an API key associated with the Google Cloud project you are using in this quickstart, you can add one by following the steps at Creating an API Key. To secure access to your gateway using an API key:
-1. Enable API key support for your service. Enter the following command, where: API_ID specifies the name of your API. HASH is the unique hash code generated when you deployed the API. PROJECT_ID specifies the name of your Google Cloud project.
-gcloud services enable API_ID-HASH.apigateway.PROJECT_ID.cloud.goog
-For example:
-gcloud services enable my-api-123abc456def1.apigateway.my-project.cloud.goog
-7/10
 
-2. Modify the OpenAPI spec used to create your API config to include instructions to enforce an API key validation security policy on all traffic. Add the security type and securityDefinitions as shown below:
-# openapi2-functions.yaml swagger: '2.0' info:
-title: API_ID optional-string description: Sample API on API Gateway with a Google Cloud Functions backend version: 1.0.0 schemes: - https produces: - application/json paths: /hello:
-get: summary: Greet a user operationId: hello x-google-backend: address: https://GCP_REGION-PROJECT_ID.cloudfunctions.net/helloGET security: - api_key: [] responses: '200': description: A successful response schema: type: string
-securityDefinitions: # This section configures basic authentication with an API key. api_key: type: "apiKey" name: "key" in: "query"
-The securityDefinition configures your API to require an API key passed as a query parameter named key when requesting access to all paths defined in the
-spec.
-3. Create a new API config with the modified OpenAPI spec using the following
-command:
+To secure access to your API backend, generate an API key associated with your project and grant that key access to call your API
+https://cloud.google.com/endpoints/docs/openapi/restricting-api-access-with-api-keys
+If you do not already have an API key associated with the Google Cloud project you are using in this quickstart, you can add one by following the steps at Creating an API Key. 
+https://cloud.google.com/docs/authentication/api-keys#creating_an_api_key
+
+![](2021-07-16-07-40-14.png)
+
+To secure access to your gateway using an API key:
+1. Enable API key support for your service. 
+NOTE: look for managedservice hash value
+
+![](2021-07-16-10-18-20.png)
+
+```
+gcloud services enable API_ID-HASH.apigateway.PROJECT_ID.cloud.goog
+#For example:
+gcloud services enable my-api-123abc456def1.apigateway.my-project.cloud.goog
+```
+
+2. Modify the OpenAPI spec used to create your API config to include instructions to enforce an API key validation security policy on all traffic. Add the security type and securityDefinitions as shown below:
+[here](./obar1-api-000-secure-api-key.yaml)
+
+3. Create a new API config with the modified OpenAPI spec using the following command:
+```
 gcloud api-gateway api-configs create NEW_CONFIG_ID \ --api=API_ID --openapi-spec=NEW_API_DEFINITION \ --project=PROJECT_ID --backend-auth-service-account=SERVICE_ACCOUNT_EMAIL
-For example:
+#For example:
 gcloud api-gateway api-configs create my-config-key \ --api=my-api --openapi-spec=openapi2-functions.yaml \ --project=my-project --backend-auth-service-
 account=0000000000000compute@developer.gserviceaccount.com
-8/10
+```
 
-4. Run the following command to update your existing gateway with the new API config:
+4. Run the following command to update your existing gateway with the new API config:
+```
 gcloud api-gateway gateways update GATEWAY_ID \ --api=API_ID --api-config=NEW_CONFIG_ID \ --location=GCP_REGION --project=PROJECT_ID
-For example:
+#For example:
 gcloud api-gateway gateways update my-gateway \ --api=my-api --api-config=my-config-key \ --location=us-central1 --project=my-project
-Testing your API key
+```
+![](2021-07-16-09-22-01.png)
+
+## Testing your API key
+
 Once you have created and deployed the modified API, try making a request to it. Enter the following curl command, where:
 DEFAULT_HOSTNAME specifies the hostname portion of your deployed gateway URL. hello is the path specified in your API config.
+
+```
 curl https://DEFAULT_HOSTNAME/hello
 For example:
 curl https://my-gateway-a12bcd345e67f89g0h.uc.gateway.dev/hello
+```
 This should result in the following error:
-UNAUTHENTICATED:Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.
+> UNAUTHENTICATED:Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.
+
+![](2021-07-16-09-23-55.png)
+
 Now, enter the following curl command where:
-DEFAULT_HOSTNAME specifies the hostname portion of your deployed gateway URL. hello is the path specified in your API config. API_KEY specifies the API key you created in the previous step.
+
+```
 curl https://DEFAULT_HOSTNAME/hello?key=API_KEY
+```
+
 Now you should see Hello World! in the response from your API.
 Congratulations! You have successfully protected your API backend with an API Gateway. Now you can start onboarding new API clients by generating additional API keys.
-Clean up
-9/10
 
-To avoid incurring charges to your Google Cloud account for the resources used in this quickstart, you can delete your API and delete your gateways. You can also delete the Google Cloud project used for this tutorial.
-What's next
-Learn more About API Gateway Walk through Configuring the development environment Rate and review
-10/10
+![](2021-07-16-10-10-05.png)
+
+## Clean up
+
+To avoid incurring charges to your Google Cloud account for the resources used in this quickstart, you can delete your API and delete your gateways. You can also delete the Google Cloud project used for this tutorial.
 
 

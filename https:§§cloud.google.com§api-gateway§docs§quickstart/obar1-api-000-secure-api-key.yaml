@@ -1,5 +1,5 @@
 # openapi2-functions.yaml
-swagger: "2.0"
+swagger: '2.0'
 info:
   title: obar1-api-000
   description: Sample API on API Gateway with a Google Cloud Functions backend
@@ -15,8 +15,16 @@ paths:
       operationId: hello
       x-google-backend:
         address: https://us-central1-coherent-vim-317506.cloudfunctions.net/hello_get
+      security:
+        - api_key: []
       responses:
-        "200":
+        '200':
           description: A successful response
           schema:
             type: string
+securityDefinitions:
+  # This section configures basic authentication with an API key.
+  api_key:
+    type: "apiKey"
+    name: "key"
+    in: "query"
