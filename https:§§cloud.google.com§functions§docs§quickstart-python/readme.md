@@ -58,4 +58,5 @@ change trigger event
 ```
 {"message":"Hello, mario!"}
 ```
-![](2021-06-24-14-27-54.png)
+![](2021-06-24-14-27-54.png)# https:§§cloud.google.com§functions§docs§quickstart-python
+> https://cloud.google.com/functions/docs/quickstart-python

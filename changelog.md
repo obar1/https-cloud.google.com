@@ -45,3 +45,8 @@ function do_section() {
 - [W] https://cloud.google.com/api-gateway/docs   [here](./https:§§cloud.google.com§api-gateway§docs/readme.md)
 - [X] https://cloud.google.com/api-gateway/docs/architecture-overview   [here](./https:§§cloud.google.com§api-gateway§docs§architecture-overview/readme.md)
 - [X] https://cloud.google.com/api-gateway/docs/quickstart   [here](./https:§§cloud.google.com§api-gateway§docs§quickstart/readme.md)
+- [ ] https://cloud.google.com/api-gateway/docs/authentication-method   [here](./https:§§cloud.google.com§api-gateway§docs§authentication-method/readme.md)
+- [ ] https://cloud.google.com/api-gateway/docs/how-to   [here](./https:§§cloud.google.com§api-gateway§docs§how-to/readme.md)
+- [ ] https://cloud.google.com/docs/authentication   [here](./https:§§cloud.google.com§docs§authentication/readme.md)
+- [ ] https://cloud.google.com/api-gateway/docs/authenticating-users-auth0   [here](./https:§§cloud.google.com§api-gateway§docs§authenticating-users-auth0/readme.md)
+- [ ] https://cloud.google.com/functions/docs/quickstart-python   [here](./https:§§cloud.google.com§functions§docs§quickstart-python/readme.md)
