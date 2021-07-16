@@ -14,8 +14,8 @@ function load_secrets() {
 }
 
 function set_region() {
-   export REGION="us-central1"
-   gcloud config set compute/region "$REGION"
+   export GCP_REGION="us-central1"
+   gcloud config set compute/region "$GCP_REGION"
 }
 
 ### INFO

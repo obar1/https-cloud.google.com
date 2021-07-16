@@ -92,40 +92,57 @@ gcloud api-gateway api-configs describe CONFIG_ID \ --api=API_ID --project=PROJE
 gcloud api-gateway api-configs describe my-config \ --api=my-api --project=my-project
 ```
 
+![](2021-07-16-07-14-16.png)
 
 
 ## Creating a gateway
-Now deploy the API config on a gateway. Deploying an API config on a gateway defines an external URL that API clients can use to access your API. Run the following command to deploy the API config you just created to API Gateway:
+Now deploy the API config on a gateway. Deploying an API config on a gateway defines an external URL that API clients can use to access your API. 
+
+```
 gcloud api-gateway gateways create GATEWAY_ID \ --api=API_ID --api-config=CONFIG_ID \ --location=GCP_REGION --project=PROJECT_ID
-where: GATEWAY_ID specifies the name of the gateway. API_ID specifies the name of the API Gateway API associated with this gateway. CONFIG_ID specifies the name of the API config deployed to the gateway.
-5/10
-
-GCP_REGION is the Google Cloud region for the deployed gateway.
-Note: Allowed values are:
-asia-east1 asia-northeast1 australia-southeast1 europe-west1 europe-west2 us-east1 us-east4 us-central1 us-west2 us-west3 us-west4
-PROJECT_ID specifies the name of your Google Cloud project.
-For example:
+# For example:
 gcloud api-gateway gateways create my-gateway \ --api=my-api --api-config=my-config \ --location=us-central1 --project=my-project
-On successful completion, use the following command to view details about the gateway:
-gcloud api-gateway gateways describe GATEWAY_ID \ --location=GCP_REGION --project=PROJECT_ID
-For example:
-gcloud api-gateway gateways describe my-gateway \ --location=us-central1 --project=my-project
-This command returns the following:
-apiConfig: projects/my-project/locations/global/apis/my-api/configs/my-config createTime: '2020-02-05T13:44:12.997862831Z' defaultHostname: my-gateway-a12bcd345e67f89g0h.uc.gateway.dev displayName: my-gateway name: projects/my-project/locations/us-central1/gateways/my-gateway serviceAccount:
-email: 0000000000000-compute@developer.gserviceaccount.com state: ACTIVE updateTime: '2020-02-05T13:45:00.844705087Z'
-Note the value of the defaultHostname property. This is the hostname portion of the gateway URL you use to test your deployment in the next step.
-Testing your API deployment
-Now you can send requests to your API using the URL generated upon deployment of your gateway.
-6/10
 
-Enter the following curl command, where: DEFAULT_HOSTNAME specifies the hostname portion of your deployed gateway URL. hello is the path specified in your API config.
+```
+where: GATEWAY_ID specifies the name of the gateway. API_ID specifies the name of the API Gateway API associated with this gateway. CONFIG_ID specifies the name of the API config deployed to the gateway.
+GCP_REGION is the Google Cloud region for the deployed gateway.
+>Note: Allowed values are:
+asia-east1 asia-northeast1 australia-southeast1 europe-west1 europe-west2 us-east1 us-east4 us-central1 us-west2 us-west3 us-west4
+ 
+![](2021-07-16-07-26-59.png)
+
+On successful completion, use the following command to view details about the gateway:
+
+```
+gcloud api-gateway gateways describe GATEWAY_ID \ --location=GCP_REGION --project=PROJECT_ID
+# For example:
+gcloud api-gateway gateways describe my-gateway \ --location=us-central1 --project=my-project
+```
+
+![](2021-07-16-07-29-18.png)
+
+> Note the value of the defaultHostname property. This is the hostname portion of the gateway URL you use to test your deployment in the next step.
+
+
+## Testing your API deployment
+Now you can send requests to your API using the URL generated upon deployment of your gateway.
+
+
+Enter the following curl command, where: DEFAULT_HOSTNAME specifies the hostname portion of your deployed gateway URL. hello is the path specified in your API config.
+
+```
 curl https://DEFAULT_HOSTNAME/hello
-For example:
+# For example:
 curl https://my-gateway-a12bcd345e67f89g0h.uc.gateway.dev/hello
+```
 The output is:
 Hello World!
+
+![](2021-07-16-07-35-01.png)
+
 You have successfully created and deployed an API Gateway!
-Securing access by using an API key
+
+## Securing access by using an API key
 To secure access to your API backend, generate an API key associated with your project and grant that key access to call your API. See Restricting API access with API keys for more information. If you do not already have an API key associated with the Google Cloud project you are using in this quickstart, you can add one by following the steps at Creating an API Key. To secure access to your gateway using an API key:
 1. Enable API key support for your service. Enter the following command, where: API_ID specifies the name of your API. HASH is the unique hash code generated when you deployed the API. PROJECT_ID specifies the name of your Google Cloud project.
 gcloud services enable API_ID-HASH.apigateway.PROJECT_ID.cloud.goog

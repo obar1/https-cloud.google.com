@@ -1,39 +1,16 @@
 #!/usr/bin/env bash
+set -u
+set -o pipefail
 
-# hands-on readme.md
-source "$BASE_PATH/tools.sh"
-SECTION=https:§§cloud.google.com§dataflow§docs§guides§templates§using-flex-templates
-export SECTION
-
-ME='runme.sh'
-export ME
-
-### INFO
-
-function helpme() {
-   info "$BASE_PATH/$SECTION/$ME"
-}
-
-
-### INIT
-
-function load_secrets() {
-   source "$BASE_PATH"/secrets/runme.sh
-}
-
-function set_region() {
-   export REGION="us-central1"
-   gcloud config set compute/region "$REGION"
-}
-
+source "${BASE_PATH}"/tools.sh
 
 ### Create a Cloud Storage bucket
 
-function set_bucket_vars(){
+function set_bucket_vars() { #
    export BUCKET_ID="my-storage-bucket-$PROJECT_ID"
 }
 
-function create_bucket() {
+function create_bucket() { #
    gsutil mb gs://"$BUCKET_ID"
 }
 
@@ -63,30 +40,30 @@ function create_scheduler_job() { # send pos and neg target msg to pub/sub
    --message-body='{"url": "https://beam.apache.org/", "review": "negative"}'
 }
 
-function run_scheduler_job(){
+function run_scheduler_job() { #
    gcloud scheduler jobs run positive-ratings-publisher
    gcloud scheduler jobs run negative-ratings-publisher
 }
 
 ### Create a BigQuery dataset
 
-function set_bigq_vars(){
+function set_bigq_vars() { #
    export DATASET="beam_samples"
    export TABLE="streaming_beam_sql"
 }
 
-function mk_bigq(){
+function mk_bigq() { #
    bq mk --dataset "$PROJECT_ID:$DATASET"
 }
 
 ## Python only: Creating and building a container image
 
-function set_template_set_template(){
+function set_template_set_template() { #
    export TEMPLATE_IMAGE="gcr.io/$PROJECT_ID/samples/dataflow/streaming-beam-sql:latest"
    export TEMPLATE_PATH="gs://$BUCKET_ID/samples/dataflow/templates/streaming-beam-sql.json"
 }
 
-function creating_and_building_container_image() {
+function creating_and_building_container_image() { #
    cd streaming_beam || exit
 
    gcloud config set builds/use_kaniko True
@@ -97,7 +74,7 @@ function creating_and_building_container_image() {
 
 ## Creating a Flex Template
 
-function creating_flex_template() {
+function creating_flex_template() { #
    cd streaming_beam || exit
    gcloud dataflow flex-template build "$TEMPLATE_PATH" \
       --image "$TEMPLATE_IMAGE" \
@@ -108,7 +85,7 @@ function creating_flex_template() {
 
 ## Running a Flex Template pipeline
 
-function running_flex_template() {
+function running_flex_template() { #
   gcloud dataflow flex-template run "streaming-beam-$(date +%Y%m%d-%H%M%S)" \
     --template-file-gcs-location "$TEMPLATE_PATH" \
     --parameters input_subscription="projects/$PROJECT_ID/subscriptions/$SUBSCRIPTION" \
@@ -116,13 +93,13 @@ function running_flex_template() {
     --region "$REGION"
 }
 
-function echo_check_data_bq() {
+function echo_check_data_bq() { #
    echo bq query --use_legacy_sql=false 'SELECT count(1) FROM `'"$PROJECT_ID.$DATASET.$TABLE"'`'
 }
 
 ## Cleaning up
 
-function cleaning_up() {
+function cleaning_up() { #
    gcloud scheduler jobs delete negative-ratings-publisher || true
    gcloud scheduler jobs delete positive-ratings-publisher || true
 
@@ -137,12 +114,10 @@ function cleaning_up() {
    gsutil rm -r "gs://$BUCKET_ID" || true
 }
 
-## 
-## params
-##
+# params
 
 case "${1}" in 
-  1|'r') echo "run!" # function
+  1 | 'r') ## run
          load_secrets
          set_region
          set_bucket_vars
@@ -159,12 +134,12 @@ case "${1}" in
          running_flex_template
          echo_check_data_bq
        ;;
-  2|'c') echo "cleanup!" #function
+2 | 'c') ## clean up#function
          load_secrets
          set_bigq_vars
          cleaning_up
        ;;
-  *) helpme
+*) info "$0" ;;
 esac
 
 
