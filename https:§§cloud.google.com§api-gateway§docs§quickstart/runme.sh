@@ -14,7 +14,7 @@ function enabling_services() { #
 
 function deploy_func() {
    # https://us-central1-coherent-vim-317506.cloudfunctions.net/hello_get
-   echo "/Users/mamat/git/obar1/https-cloud.google.com.com.git/https:§§cloud.google.com§functions§docs§quickstart/runme.sh"
+   echo "https-cloud.google.com.com.git/https:§§cloud.google.com§functions§docs§quickstart/runme.sh"
 }
 
 ## Creating an API

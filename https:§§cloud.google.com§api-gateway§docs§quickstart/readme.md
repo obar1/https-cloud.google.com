@@ -28,6 +28,7 @@ API Gateway sits in front of a deployed backend service and handles all incoming
 
 https://cloud.google.com/functions/docs/quickstart
 
+![](2021-07-16-07-03-39.png)
 ![](2021-07-15-17-22-26.png)
 
 ## Creating an API
@@ -67,10 +68,10 @@ Before API Gateway can be used to manage traffic to your deployed API backend, i
 [here](./my-api.yaml.template)
  
 
-
-3. Edit the file as follows: 1. In the title field, replace API_ID with the name of your API and replace optional-string with a brief description of your choosing. The value of this field is used when minting API keys that grant access to this API. 2. In the address field, replace GCP_REGION with the GCP region of the deployed function and PROJECT_ID with the name of your Google Cloud project.
+3. Edit the file 
 4. Enter the following command, where:
-CONFIG_ID specifies the name of your API config. API_ID specifies the name of your API. PROJECT_ID specifies the name of your Google Cloud project. SERVICE_ACCOUNT_EMAIL specifies the service account created explicitly for creating API configs. For more information, see Configuring a service account. https://cloud.google.com/api-gateway/docs/configure-dev-env#configuring_a_service_account
+CONFIG_ID specifies the name of your API config. API_ID specifies the name of your API. PROJECT_ID specifies the name of your Google Cloud project. SERVICE_ACCOUNT_EMAIL specifies the service account created explicitly for creating API configs. 
+For more information, see Configuring a service account. https://cloud.google.com/api-gateway/docs/configure-dev-env#configuring_a_service_account
 
 ```
 gcloud api-gateway api-configs create CONFIG_ID \ --api=API_ID --openapi-spec=API_DEFINITION \ --project=PROJECT_ID --backend-auth-service-account=SERVICE_ACCOUNT_EMAIL
@@ -80,20 +81,20 @@ compute@developer.gserviceaccount.com
 ```
 
 This operation may take several minutes to complete as the API config is propagated to downstream systems. Creation of a complex API config could take up to ten minutes to complete successfully.
-Note: If you run this command and receive an error in the form FAILED_PRECONDITION: Service Account ... does not exist , see Configuring a service account to ensure that a service account is enabled for your project.
 
-https://cloud.google.com/api-gateway/docs/configure-dev-env#configuring_a_service_account
+![](2021-07-16-06-59-12.png)
 
-4/10
+5. After the API config is created, you can view its details
 
-5. After the API config is created, you can view its details by running this command:
+```
 gcloud api-gateway api-configs describe CONFIG_ID \ --api=API_ID --project=PROJECT_ID
-For example:
+# For example:
 gcloud api-gateway api-configs describe my-config \ --api=my-api --project=my-project
-The output shows your API config details, including name and state, as shown in the example below:
-createTime: '2020-02-07T18:17:01.839180746Z' displayName: my-config gatewayConfig: backendConfig:
-googleServiceAccount: 0000000000000-compute@developer.gserviceaccount.com name: projects/my-project/locations/global/apis/my-api/configs/my-config serviceRollout: rolloutId: 2020-02-07r0 state: ACTIVE updateTime: '2020-02-07T18:17:02.173778118Z'
-Creating a gateway
+```
+
+
+
+## Creating a gateway
 Now deploy the API config on a gateway. Deploying an API config on a gateway defines an external URL that API clients can use to access your API. Run the following command to deploy the API config you just created to API Gateway:
 gcloud api-gateway gateways create GATEWAY_ID \ --api=API_ID --api-config=CONFIG_ID \ --location=GCP_REGION --project=PROJECT_ID
 where: GATEWAY_ID specifies the name of the gateway. API_ID specifies the name of the API Gateway API associated with this gateway. CONFIG_ID specifies the name of the API config deployed to the gateway.
