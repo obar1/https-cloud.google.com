@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # some tools
-# FIXME: source me on the prompt
+# NOTE: source me on the prompt
 
 # TODO: set your BASE_PATH
 BASE_PATH=/Users/mamat/git/obar1/https-cloud.google.com.com.git
@@ -10,12 +10,14 @@ export BASE_PATH
 ### INIT
 
 function load_secrets() {
-   source "${BASE_PATH}"/secrets/runme.sh
+    source "${BASE_PATH}"/secrets/runme.sh
 }
 
 function set_region() {
-   export GCP_REGION="us-central1"
-   gcloud config set compute/region "$GCP_REGION"
+    if [ -z ${GCP_REGION+x} ]; then
+        export GCP_REGION="us-central1"
+        gcloud config set compute/region "$GCP_REGION"
+    fi
 }
 
 ### INFO
@@ -23,7 +25,7 @@ function set_region() {
 function info() { # print small help  [file]
     file="${1}"
     # grep section ## or function with #
-    grep -E '##|function' "$file" | grep  "#" 
+    grep -E '##|function' "$file" | grep "#"
 }
 
 function list_api() { # list enabled api
@@ -47,43 +49,32 @@ function dir_from_http() { # convert from http to valid local dir name [http_add
 
 function make_dir_section() { # mkdir and readme [dir_from_http]
     dir_from_http "${1}"
-    mkdir -p "$section" && touch "$section"/readme.md
+    mkdir -p "$section"
     echo "# ""$section" >>"$section"/readme.md
     echo "> $1" >>"$section"/readme.md
-    cat "$section"/readme.md
-
-    cat runme.template.sh >"$section"/runme.md
+    # cp "${BASE_PATH}"/runme.template.sh "$section"/runme.md
 }
 
-function add_section_to_changelog(){  # add is http://  to toc and add section [dir_from_http]
+function add_section_to_changelog() { # add is http://  to toc and add section [dir_from_http]
     dir_from_http "${1}"
-    echo "- [ ] ${1}   [here](./$section/readme.md)" >> changelog.md
-    cat changelog.md
+    echo "- [ ] ${1}   [here](./$section/readme.md)" >>changelog.md
+    tail changelog.md
 }
 
 function convert_pdf_to_txt() { # pdf export [dir_from_http]
     dir_from_http "${1}"
-    mv "${section}/*.pdf ${section}/readme.pdf"
-    pdftotext "$section"/readme.pdf "$section"/readme.pdf.txt
-    ls -r "$section"
+    echo mv "${section}/*.pdf ${section}/readme.pdf"
+    echo pdftotext "$section"/readme.pdf "$section"/readme.pdf.txt
+    echo ls -r "$section"
 }
 
 function do_section() { # main do to process a section  [http_address]
+    cd "${BASE_PATH}"
     http_address="${1}"
     make_dir_section "${http_address}"
     add_section_to_changelog "${http_address}"
-
-    echo -n "convert_pdf_to_txt (y/n)? "
-    read -r answer
-
-    if [ "$answer" != "${answer#[Yy]}" ] ;then
-        echo Yes
-        convert_pdf_to_txt "${http_address}"
-    else
-        echo No
-    fi
+    convert_pdf_to_txt "${http_address}"
 }
-
 
 load_secrets
 set_region
