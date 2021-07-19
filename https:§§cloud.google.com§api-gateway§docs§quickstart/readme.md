@@ -213,4 +213,4 @@ Congratulations! You have successfully protected your API backend with an API Ga
 
 To avoid incurring charges to your Google Cloud account for the resources used in this quickstart, you can delete your API and delete your gateways. You can also delete the Google Cloud project used for this tutorial.
 
-
+
