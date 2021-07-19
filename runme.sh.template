@@ -7,13 +7,13 @@ source "${BASE_PATH}"/tools.sh
 ## Do smething
 
 function do_something() { #
-   echo "hello"
+   echo "do_something"
 }
 
 ## Cleaning up
 
 function cleaning_up() { #
-   echo '# gcloud xxx || true'
+   echo 'cleaning_up'
 }
 
 # params
