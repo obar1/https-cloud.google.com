@@ -6,21 +6,22 @@ https://cloud.google.com/api-gateway/docs/about-api-gateway
 
 ## Guides
 
-https://cloud.google.com/api-gateway/docs/quickstart
+https://cloud.google.com/api-gateway/docs/quickstart :+1:
 
-https://cloud.google.com/api-gateway/docs/quickstart-console
+https://cloud.google.com/api-gateway/docs/quickstart-console :+1: 
+SKIP:
 
-https://cloud.google.com/api-gateway/docs/authentication-method
+https://cloud.google.com/api-gateway/docs/authentication-method :+1:
 
-https://cloud.google.com/api-gateway/docs/creating-api
+https://cloud.google.com/api-gateway/docs/creating-api :+1:
 
-https://cloud.google.com/api-gateway/docs/creating-api-config
+https://cloud.google.com/api-gateway/docs/creating-api-config :+1:
 
-https://cloud.google.com/api-gateway/docs/authenticate-service-account
+https://cloud.google.com/api-gateway/docs/authenticate-service-account :+1:
 
-https://cloud.google.com/api-gateway/docs/deploying-api
+https://cloud.google.com/api-gateway/docs/deploying-api :+1:
 
-https://cloud.google.com/api-gateway/docs/configure-dev-env
+https://cloud.google.com/api-gateway/docs/configure-dev-env :+1:
 
-https://cloud.google.com/api-gateway/docs/quotas-overview
+https://cloud.google.com/api-gateway/docs/quotas-overview :+1:
 
