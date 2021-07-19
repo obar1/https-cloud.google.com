@@ -32,7 +32,7 @@ https://cloud.google.com/api-gateway/docs/authentication-method
 
 https://cloud.google.com/api-gateway/docs/authenticating-users-jwt
 
-https://cloud.google.com/api-gateway/docs/authenticating-users-auth0
+`https://cloud.google.com/api-gateway/docs/authenticating-users-auth0`
 
 https://cloud.google.com/api-gateway/docs/authenticate-service-account
 

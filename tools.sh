@@ -57,7 +57,7 @@ function make_dir_section() { # mkdir and readme [dir_from_http]
 
 function add_section_to_changelog() { # add is http://  to toc and add section [dir_from_http]
     dir_from_http "${1}"
-    echo "- [ ] ${1}   [here](./$section/readme.md)" >>changelog.md
+    echo "- ${1} :o: [`here`](./$section/readme.md)" >>changelog.md
     tail changelog.md
 }
 

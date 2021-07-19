@@ -4,9 +4,9 @@
 
 ## About Google Cloud Platform services
 
-diff backedn implementation are hiddent  we use api
+diff backend implementation are hidden  we use api
 each service is exposed as http endpoint
-you can implment it as 
+you can implement it as 
 - CF
 - Cloud Run 
 - App Engine

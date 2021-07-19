@@ -1,9 +1,9 @@
 # changelog
 
 ## added to 000
- - [X] 000 `tools.sh` +
-
- - [X] 000 `tools.sh` +
+ - 000 `secrets.sh` init
+ - 000 `tools.sh` init
+ - 000 `tools.sh` +
 ```
 function dir_from_http() {
 function make_dir_section() {
@@ -11,42 +11,49 @@ function convert_pdf_to_txt() {
 function add_section_to_changelog() {
 function do_section() {
 ```
+- 000 using
+```
+- https://cloud.google.com/something :o: [`here`](./https:§§cloud.google.com§something/readme.md)
+- https://cloud.google.com/something :ok: [`here`](./https:§§cloud.google.com§something/readme.md)
+```
 
 ## section wip 1 2 ... +
 
-- [W] https://cloud.google.com/dataflow/docs/guides/templates/configuring-flex-templates   [here](./https:§§cloud.google.com§dataflow§docs§guides§templates§configuring-flex-templates/readme.md)
-- [X] https://cloud.google.com/blog/products/data-analytics/create-templates-from-any-dataflow-pipeline   [here](./https:§§cloud.google.com§blog§products§data-analytics§create-templates-from-any-dataflow-pipeline/readme.md) 
-- [X] https://cloud.google.com/dataflow   [here](./https:§§cloud.google.com§dataflow/readme.md)
-- [X] https://cloud.google.com/dataflow/docs/concepts/dataflow-templates   [here](./https:§§cloud.google.com§dataflow§docs§concepts§dataflow-templates/readme.md)
-- [X] https://cloud.google.com/dataflow/docs/guides/templates/creating-templates   [here](./https:§§cloud.google.com§dataflow§docs§guides§templates§creating-templates/readme.md)
-- [X] https://cloud.google.com/dataflow/docs/guides/templates/provided-templates   [here](./https:§§cloud.google.com§dataflow§docs§guides§templates§provided-templates/readme.md)
-- [X] https://cloud.google.com/dataflow/docs/guides/templates/running-templates   [here](./https:§§cloud.google.com§dataflow§docs§guides§templates§running-templates/readme.md)
-- [X] https://cloud.google.com/dataflow/docs/guides/templates/using-flex-templates   [here](./https:§§cloud.google.com§dataflow§docs§guides§templates§using-flex-templates/readme.md)
-- [X] https://cloud.google.com/dataflow/docs/quickstarts   [here](./https:§§cloud.google.com§dataflow§docs§quickstarts/readme.md)
-- [X] https://cloud.google.com/dataflow/docs/quickstarts/quickstart-python   [here](./https:§§cloud.google.com§dataflow§docs§quickstarts§quickstart-python/readme.md)
-- [X] https://cloud.google.com/dataflow/docs/quickstarts/quickstart-python   [here](./https:§§cloud.google.com§dataflow§docs§quickstarts§quickstart-python/readme.md)
-- [X] https://cloud.google.com/functions   [here](./https:§§cloud.google.com§functions/readme.md)
-- [X] https://cloud.google.com/functions/docs/quickstart-python   [here](./https:§§cloud.google.com§functions§docs§quickstart-python/readme.md)
-- [ ] https://cloud.google.com/functions/docs/quickstart   [here](./https:§§cloud.google.com§functions§docs§quickstart/readme.md)
-- [ ] https://cloud.google.com/storage   [here](./https:§§cloud.google.com§storage/readme.md)
-- [W] https://cloud.google.com/products  [here](./https:§§cloud.google.com§products/readme.md)
-- [X] https://cloud.google.com/sql   [here](./https:§§cloud.google.com§sql/readme.md)
-- [W] https://cloud.google.com/sql/docs/mysql/quickstart   [here](./https:§§cloud.google.com§sql§docs§mysql§quickstart/readme.md)
-- [W] https://cloud.google.com/sql/docs/mysql/create-instance   [here](./https:§§cloud.google.com§sql§docs§mysql§create-instance/readme.md)
-- [W] https://cloud.google.com/products/operations   [here](./https:§§cloud.google.com§products§operations/readme.md)
-- [W] https://google.qwiklabs.com/quests/35   [here](./https:§§google.qwiklabs.com§quests§35/readme.md)
-- [W] https://google.qwiklabs.com/quests/81   [here](./https:§§google.qwiklabs.com§quests§81/readme.md)
-- [W] https://cloud.google.com/logging   [here](./https:§§cloud.google.com§logging/readme.md)
-- [X] https://cloud.google.com/pubsub   [here](./https:§§cloud.google.com§pubsub/readme.md)
-- [X] https://cloud.google.com/pubsub/docs/overview   [here](./https:§§cloud.google.com§pubsub§docs§overview/readme.md)
-- [X] https://cloud.google.com/pubsub/docs/quickstart-console   [here](./https:§§cloud.google.com§pubsub§docs§quickstart-console/readme.md)
-- [X] https://cloud.google.com/api-gateway   [here](./https:§§cloud.google.com§api-gateway/readme.md)
-- [X] https://cloud.google.com/api-gateway/docs/about-api-gateway   [here](./https:§§cloud.google.com§api-gateway§docs§about-api-gateway/readme.md)
-- [W] https://cloud.google.com/api-gateway/docs   [here](./https:§§cloud.google.com§api-gateway§docs/readme.md)
-- [X] https://cloud.google.com/api-gateway/docs/architecture-overview   [here](./https:§§cloud.google.com§api-gateway§docs§architecture-overview/readme.md)
-- [X] https://cloud.google.com/api-gateway/docs/quickstart   [here](./https:§§cloud.google.com§api-gateway§docs§quickstart/readme.md)
-- [ ] https://cloud.google.com/api-gateway/docs/authentication-method   [here](./https:§§cloud.google.com§api-gateway§docs§authentication-method/readme.md)
-- [ ] https://cloud.google.com/api-gateway/docs/how-to   [here](./https:§§cloud.google.com§api-gateway§docs§how-to/readme.md)
-- [ ] https://cloud.google.com/docs/authentication   [here](./https:§§cloud.google.com§docs§authentication/readme.md)
-- [ ] https://cloud.google.com/api-gateway/docs/authenticating-users-auth0   [here](./https:§§cloud.google.com§api-gateway§docs§authenticating-users-auth0/readme.md)
-- [ ] https://cloud.google.com/functions/docs/quickstart-python   [here](./https:§§cloud.google.com§functions§docs§quickstart-python/readme.md)
+- https://cloud.google.com/api-gateway :ok: [`here`](./https:§§cloud.google.com§api-gateway/readme.md)
+- https://cloud.google.com/api-gateway/docs :o: [`here`](./https:§§cloud.google.com§api-gateway§docs/readme.md)
+- https://cloud.google.com/api-gateway/docs/about-api-gateway :o: [`here`](./https:§§cloud.google.com§api-gateway§docs§about-api-gateway/readme.md)
+- https://cloud.google.com/api-gateway/docs/architecture-overview :o: [`here`](./https:§§cloud.google.com§api-gateway§docs§architecture-overview/readme.md)
+- https://cloud.google.com/api-gateway/docs/authenticate-service-account :o: [`here`](./https:§§cloud.google.com§api-gateway§docs§authenticate-service-account/readme.md)
+- https://cloud.google.com/api-gateway/docs/authenticating-users-auth0 :o: [`here`](./https:§§cloud.google.com§api-gateway§docs§authenticating-users-auth0/readme.md)
+- https://cloud.google.com/api-gateway/docs/authentication-method :o: [`here`](./https:§§cloud.google.com§api-gateway§docs§authentication-method/readme.md)
+- https://cloud.google.com/api-gateway/docs/how-to :o: [`here`](./https:§§cloud.google.com§api-gateway§docs§how-to/readme.md)
+- https://cloud.google.com/api-gateway/docs/quickstart :o: [`here`](./https:§§cloud.google.com§api-gateway§docs§quickstart/readme.md)
+- https://cloud.google.com/blog/products/data-analytics/create-templates-from-any-dataflow-pipeline :o: [`here`](./https:§§cloud.google.com§blog§products§data-analytics§create-templates-from-any-dataflow-pipeline/readme.md) 
+- https://cloud.google.com/dataflow :o: [`here`](./https:§§cloud.google.com§dataflow/readme.md)
+- https://cloud.google.com/dataflow/docs/concepts/dataflow-templates :o: [`here`](./https:§§cloud.google.com§dataflow§docs§concepts§dataflow-templates/readme.md)
+- https://cloud.google.com/dataflow/docs/guides/templates/configuring-flex-templates :o: [`here`](./https:§§cloud.google.com§dataflow§docs§guides§templates§configuring-flex-templates/readme.md)
+- https://cloud.google.com/dataflow/docs/guides/templates/creating-templates :o: [`here`](./https:§§cloud.google.com§dataflow§docs§guides§templates§creating-templates/readme.md)
+- https://cloud.google.com/dataflow/docs/guides/templates/provided-templates :o: [`here`](./https:§§cloud.google.com§dataflow§docs§guides§templates§provided-templates/readme.md)
+- https://cloud.google.com/dataflow/docs/guides/templates/running-templates :o: [`here`](./https:§§cloud.google.com§dataflow§docs§guides§templates§running-templates/readme.md)
+- https://cloud.google.com/dataflow/docs/guides/templates/using-flex-templates :o: [`here`](./https:§§cloud.google.com§dataflow§docs§guides§templates§using-flex-templates/readme.md)
+- https://cloud.google.com/dataflow/docs/quickstarts :o: [`here`](./https:§§cloud.google.com§dataflow§docs§quickstarts/readme.md)
+- https://cloud.google.com/dataflow/docs/quickstarts/quickstart-python :o: [`here`](./https:§§cloud.google.com§dataflow§docs§quickstarts§quickstart-python/readme.md)
+- https://cloud.google.com/dataflow/docs/quickstarts/quickstart-python :o: [`here`](./https:§§cloud.google.com§dataflow§docs§quickstarts§quickstart-python/readme.md)
+- https://cloud.google.com/docs/authentication :o: [`here`](./https:§§cloud.google.com§docs§authentication/readme.md)
+- https://cloud.google.com/endpoints/docs/openapi/authenticating-users-auth0 :o: [`here`](./https:§§cloud.google.com§endpoints§docs§openapi§authenticating-users-auth0/readme.md)
+- https://cloud.google.com/functions :o: [`here`](./https:§§cloud.google.com§functions/readme.md)
+- https://cloud.google.com/functions/docs/quickstart :o: [`here`](./https:§§cloud.google.com§functions§docs§quickstart/readme.md)
+- https://cloud.google.com/functions/docs/quickstart-python :o: [`here`](./https:§§cloud.google.com§functions§docs§quickstart-python/readme.md)
+- https://cloud.google.com/functions/docs/quickstart-python :o: [`here`](./https:§§cloud.google.com§functions§docs§quickstart-python/readme.md)
+- https://cloud.google.com/logging :o: [`here`](./https:§§cloud.google.com§logging/readme.md)
+- https://cloud.google.com/products :o: [`here`](./https:§§cloud.google.com§products/readme.md)
+- https://cloud.google.com/products/operations :o: [`here`](./https:§§cloud.google.com§products§operations/readme.md)
+- https://cloud.google.com/pubsub :o: [`here`](./https:§§cloud.google.com§pubsub/readme.md)
+- https://cloud.google.com/pubsub/docs/overview :o: [`here`](./https:§§cloud.google.com§pubsub§docs§overview/readme.md)
+- https://cloud.google.com/pubsub/docs/quickstart-console :o: [`here`](./https:§§cloud.google.com§pubsub§docs§quickstart-console/readme.md)
+- https://cloud.google.com/sql :o: [`here`](./https:§§cloud.google.com§sql/readme.md)
+- https://cloud.google.com/sql/docs/mysql/create-instance :o: [`here`](./https:§§cloud.google.com§sql§docs§mysql§create-instance/readme.md)
+- https://cloud.google.com/sql/docs/mysql/quickstart :o: [`here`](./https:§§cloud.google.com§sql§docs§mysql§quickstart/readme.md)
+- https://cloud.google.com/storage :o: [`here`](./https:§§cloud.google.com§storage/readme.md)
+- https://google.qwiklabs.com/quests/35 :o: [`here`](./https:§§google.qwiklabs.com§quests§35/readme.md)
+- https://google.qwiklabs.com/quests/81 :o: [`here`](./https:§§google.qwiklabs.com§quests§81/readme.md)
