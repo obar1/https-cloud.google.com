@@ -33,3 +33,6 @@ gcloud iam service-accounts list
 ```
 ![](2021-07-19-18-35-00.png)
 
+## Updating a service account
+
+SKIP: until the end

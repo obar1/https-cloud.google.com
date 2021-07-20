@@ -19,7 +19,7 @@ gcloud api-gateway api-configs create --help
 ```
 gcloud api-gateway api-configs create CONFIG_ID --api=API_ID --openapi-spec=API_DEFINITION  --project=PROJECT_ID --backend-auth-service-account=SERVICE_ACCOUNT_EMAIL
 ```
-> Creation of a complex API config could take upto ten minutes to complete successfully.
+> Creation of a complex API config could take up to ten minutes to complete successfully.
 
 [`here`](../https:§§cloud.google.com§api-gateway§docs§configure-dev-env/readme.md)
 > configuring_a_service_account
@@ -49,7 +49,11 @@ gcloud api-gateway api-configs list --project=
 
 ## Updating an API config
 
-SKIP:
+```
+gcloud api-gateway api-configs update CONFIG_ID \
+  --api=API_ID  --project=PROJECT_ID \
+  --update-labels=a=1,b=2
+```
 
 ## Deleting an API config
 

@@ -109,10 +109,4 @@ function do_section() {
 
 - https://google.qwiklabs.com/quests/81 :o: [`here`](../https:§§google.qwiklabs.com§quests§81/readme.md)
 
-- https://cloud.google.com/iam/docs/creating-managing-service-accounts :ok: [`here`](../https:§§cloud.google.com§iam§docs§creating-managing-service-accounts/readme.md)/Users/mamat/git/obar1/https-cloud.google.com.com.git/https:§§cloud.google.com§api-gateway§docs§creating-api-config/readme.md
-
-  ```
-  
-  ```
-
-  
+- https://cloud.google.com/iam/docs/creating-managing-service-accounts :ok: [`here`](../https:§§cloud.google.com§iam§docs§creating-managing-service-accounts/readme.md)
