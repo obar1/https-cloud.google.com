@@ -84,7 +84,7 @@ reuse
 ```
    API_ID=obar1-api-id
    CONFIG_ID=obar1-api-config-id
-   API_DEFINITION='obar1-api-000.yaml'
+   API_DEFINITION='obar1-api.yaml'
 ```
 
 checks on the jwt token 
@@ -93,6 +93,10 @@ before api gateway fwd req to  the actual api
 - `iss` match `x-google-issuer`
 - `aud` match one of the valuies in `x-google-audiences`
 - token is not expired `exp`
+
+![](2021-07-20-23-33-32.png)
+![](2021-07-20-23-34-05.png)
+![](2021-07-20-23-33-03.png)
 
 For more information about x-google-issuer, x-google-jwks_uri, and x-google-audiences, see
 https://cloud.google.com/endpoints/docs/openapi/openapi-extensions

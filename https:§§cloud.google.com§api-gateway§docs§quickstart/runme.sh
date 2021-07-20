@@ -33,9 +33,9 @@ function describe_api() { #
 }
 
 function set_deploy_api() { #
-   API_CONFIG_ID='config-obar1-api-000'
+   API_CONFIG_ID='config-obar1-api'
    export API_CONFIG_ID
-   API_CONFIG_YAML='obar1-api-000.yaml'
+   API_CONFIG_YAML='obar1-api.yaml'
    export API_CONFIG_YAML
 }
 
@@ -77,11 +77,11 @@ function enable_api_key { #
 }
 
 function set_deploy_api_config_secure_api_key() { #
-   API_ID_SECURE_API_KEY='obar1-api-000-secure-api-key'
+   API_ID_SECURE_API_KEY='obar1-api-secure-api-key'
    export API_ID_SECURE_API_KEY
-   API_CONFIG_ID_SECURE_API_KEY='config-obar1-api-000-secure-api-key'
+   API_CONFIG_ID_SECURE_API_KEY='config-obar1-api-secure-api-key'
    export API_CONFIG_ID_SECURE_API_KEY
-   API_CONFIG_YAML_SECURE_API_KEY='obar1-api-000-secure-api-key.yaml'
+   API_CONFIG_YAML_SECURE_API_KEY='obar1-api-secure-api-key.yaml'
    export API_CONFIG_YAML_SECURE_API_KEY
 }
 

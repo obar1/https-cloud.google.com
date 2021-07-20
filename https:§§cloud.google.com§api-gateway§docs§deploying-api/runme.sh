@@ -28,7 +28,6 @@ case "${1}" in
    CONFIG_ID=obar1-api-config-id
    deploy_api_config2gateway
    gateway_details
-   # HASH=1y49d6sorvjcl
    # enble_api
 
    ;;
