@@ -30,4 +30,4 @@ calling service use service account private key  to sign in json web token
 https://jwt.io/ and send signed jwt in the req to  the api
 
 ## Use case
-check https://cloud.google.com/api-gateway/docs/authenticate-service-account
+[`here`](../https:§§cloud.google.com§api-gateway§docs§authenticate-service-account/readme.md)

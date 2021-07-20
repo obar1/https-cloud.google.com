@@ -70,3 +70,46 @@ gcloud functions delete hello_get
 ```
 
 ![](2021-06-24-14-59-21.png)
+
+ex
+```
+
+Deploying function (may take a while - up to 2 minutes)...⠹
+For Cloud Build Logs, visit: https://console.cloud.google.com/cloud-build/builds;region=us-central1/86ca54c3-300a-44d8-aed0-5a77633611ba?project=1033699142058
+Deploying function (may take a while - up to 2 minutes)...done.
+availableMemoryMb: 256
+buildId: 86ca54c3-300a-44d8-aed0-5a77633611ba
+entryPoint: hello_get
+httpsTrigger:
+  securityLevel: SECURE_OPTIONAL
+  url: https://us-central1-coherent-vim-317506.cloudfunctions.net/hello_get
+ingressSettings: ALLOW_ALL
+labels:
+  deployment-tool: cli-gcloud
+name: projects/coherent-vim-317506/locations/us-central1/functions/hello_get
+runtime: python39
+serviceAccountEmail: coherent-vim-317506@appspot.gserviceaccount.com
+sourceUploadUrl: https://storage.googleapis.com/gcf-upload-us-central1-4f45152c-7f70-42de-8b8f-840c66a6ef62/5ebc4b04-1a50-46e5-be0b-df243e87bbf6.zip?GoogleAccessId=service-1033699142058@gcf-admin-robot.iam.gserviceaccount.com&Expires=1626780979&Signature=PGsCOvC%2B30z8ivXGdQCFLJpwxt7SOCWXxt2vi8faW%2FDWYt3qFmPqhO6ySstNWf7AZvJ%2BKyK4eUT0SKMM%2BXVV53JrFl7ffq1Y%2BYbuDXAtlib3TO5qkp4UEREyhm0BpMCb0McRPoG7wMKbWF4Htoev%2Btt5mUPGTI0BlbndOgh2QKX4ViMTJCgNo%2FH%2Bw3QCLmt892IZw5jKpiZtrVlcHCNWG1z0y6DCBiBklzhpL4MlEIzTzUqd0ru4MnoBoZFbOPaFVAPaEeIiPm7zEeu9x3IEOm6hS2T%2FlUCsWGu1NLOm2%2FlnFlomu5OHKGUal0X1NNPpvep0U6ZL6GJ9D1SuFvwQkw%3D%3D
+status: ACTIVE
+timeout: 60s
+updateTime: '2021-07-20T11:07:52.789Z'
+versionId: '1'
+availableMemoryMb: 256
+buildId: 86ca54c3-300a-44d8-aed0-5a77633611ba
+entryPoint: hello_get
+httpsTrigger:
+  securityLevel: SECURE_OPTIONAL
+  url: https://us-central1-coherent-vim-317506.cloudfunctions.net/hello_get
+ingressSettings: ALLOW_ALL
+labels:
+  deployment-tool: cli-gcloud
+name: projects/coherent-vim-317506/locations/us-central1/functions/hello_get
+runtime: python39
+serviceAccountEmail: coherent-vim-317506@appspot.gserviceaccount.com
+sourceUploadUrl: https://storage.googleapis.com/gcf-upload-us-central1-4f45152c-7f70-42de-8b8f-840c66a6ef62/5ebc4b04-1a50-46e5-be0b-df243e87bbf6.zip?GoogleAccessId=service-1033699142058@gcf-admin-robot.iam.gserviceaccount.com&Expires=1626780979&Signature=PGsCOvC%2B30z8ivXGdQCFLJpwxt7SOCWXxt2vi8faW%2FDWYt3qFmPqhO6ySstNWf7AZvJ%2BKyK4eUT0SKMM%2BXVV53JrFl7ffq1Y%2BYbuDXAtlib3TO5qkp4UEREyhm0BpMCb0McRPoG7wMKbWF4Htoev%2Btt5mUPGTI0BlbndOgh2QKX4ViMTJCgNo%2FH%2Bw3QCLmt892IZw5jKpiZtrVlcHCNWG1z0y6DCBiBklzhpL4MlEIzTzUqd0ru4MnoBoZFbOPaFVAPaEeIiPm7zEeu9x3IEOm6hS2T%2FlUCsWGu1NLOm2%2FlnFlomu5OHKGUal0X1NNPpvep0U6ZL6GJ9D1SuFvwQkw%3D%3D
+status: ACTIVE
+timeout: 60s
+updateTime: '2021-07-20T11:07:52.789Z'
+versionId: '1'
+(base) √ https:§§cloud.google.com§functions§docs§quickstart %
+```

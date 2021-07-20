@@ -7,16 +7,16 @@ source "${BASE_PATH}"/_core/tools.sh
 ## Do smething
 
 function do_something() { #
-   echo "hello"
+   echo 'hello'
 }
 
 ## Cleaning up
 
 function cleaning_up() { #
-   echo '# gcloud xxx || true'
+   echo 'cleaning_up'
 }
 
-# params
+# # params
 
 case "${1}" in
 1 | 'r') ## run

@@ -10,7 +10,7 @@ export BASE_PATH
 ### INIT
 
 function load_secrets() {
-    source "${BASE_PATH}"/secrets/runme.sh
+    source "${BASE_PATH}"/_secrets/runme.sh
 }
 
 function set_region() {

@@ -8,6 +8,7 @@ authenticate services - not only humans -  for api req
 to identify a service that sends req to  api use sa
 the calling service uses sa private key to sign a secure json web token 
 https://jwt.io/
+> JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties.
 and sends signed req to the api
 
 1. create sa and key for the calling service to use
@@ -21,8 +22,8 @@ api gateway validates the claim before fwd the req to the actual api
 
 ## Prerequisites
 
-https://cloud.google.com/api-gateway/docs/openapi-overview :ok:
+[`here`](../https:§§cloud.google.com§api-gateway§docs§openapi-overview/readme.md)
 
-https://cloud.google.com/api-gateway/docs/creating-api-config
+[`here`](../https:§§cloud.google.com§api-gateway§docs§creating-api-config/readme.md)
 
 ## Creating a service account with a key

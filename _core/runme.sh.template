@@ -2,12 +2,12 @@
 set -u
 set -o pipefail
 
-source "${BASE_PATH}"/tools.sh
+source "${BASE_PATH}"/_core/tools.sh
 
 ## Do smething
 
 function do_something() { #
-   echo "do_something"
+   echo 'hello'
 }
 
 ## Cleaning up
@@ -16,7 +16,7 @@ function cleaning_up() { #
    echo 'cleaning_up'
 }
 
-# params
+# # params
 
 case "${1}" in
 1 | 'r') ## run

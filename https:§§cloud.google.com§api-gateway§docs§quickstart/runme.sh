@@ -2,7 +2,7 @@
 set -u
 set -o pipefail
 
-source "${BASE_PATH}"/tools.sh
+source "${BASE_PATH}"/_core/tools.sh
 
 ### Enabling required services
 

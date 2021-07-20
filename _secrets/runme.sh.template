@@ -2,7 +2,7 @@
 
 # gcloud secrets
 
-SECRETS_PATH="$BASE_PATH/secrets"
+SECRETS_PATH="$BASE_PATH/_secrets"
 
 # gcloud auth
 if [[ ! -d "$HOME/.config/gcloud/" ]]; then
@@ -25,6 +25,12 @@ if [[ ! -f $GOOGLE_APPLICATION_CREDENTIALS ]]; then
     echo 'File "GOOGLE_APPLICATION_CREDENTIALS" is not there, aborting.'
 fi
 echo 'Using' "$GOOGLE_APPLICATION_CREDENTIALS"
+
+# service account to use
+if [ -z ${SERVICE_ACCOUNT_ID+x} ]; then
+    SERVICE_ACCOUNT_ID='sa-123'
+    export SERVICE_ACCOUNT_ID
+fi
 
 # api key
 # https://cloud.google.com/docs/authentication/api-keys#creating_an_api_key

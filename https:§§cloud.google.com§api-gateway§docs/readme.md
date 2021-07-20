@@ -6,12 +6,12 @@ https://cloud.google.com/api-gateway/docs/about-api-gateway
 
 ## Guides
 
-https://cloud.google.com/api-gateway/docs/quickstart :+1:
+[`here`](../https:§§cloud.google.com§api-gateway§docs§quickstart/readme.md)
 
-https://cloud.google.com/api-gateway/docs/quickstart-console :+1: 
+https://cloud.google.com/api-gateway/docs/quickstart-console 
 SKIP:
 
-https://cloud.google.com/api-gateway/docs/authentication-method :+1:
+[`here`](../https:§§cloud.google.com§api-gateway§docs§authentication-method/readme.md)
 
 https://cloud.google.com/api-gateway/docs/creating-api :+1:
 
