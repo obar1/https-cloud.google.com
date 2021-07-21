@@ -96,7 +96,7 @@ case "${1}" in
    ;;
 2 | 'i') ## invocation
 # TODO:
-   defaultHostname='https://asass-d6vhs2p6.nw.gateway.dev'
+   defaultHostname='https://obar1-oauth-009-gateway-id-d6vhs2p6.uc.gateway.dev'
    client_invocation 
    echo_curl_invoation
    ;;
