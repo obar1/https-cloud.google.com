@@ -69,6 +69,12 @@ we need to enable api gateway to validate the claims in the signed jwt used call
 
 ![](2021-07-20-17-46-38.png)
 
+ex
+![](2021-07-21-09-33-52.png)
+
+https://www.googleapis.com/robot/v1/metadata/x509/sa-oauth-api-id@coherent-vim-317506.iam.gserviceaccount.com
+
+
 * optionally add `x-google-audiences`
 
 * add `security` section to apply the security
