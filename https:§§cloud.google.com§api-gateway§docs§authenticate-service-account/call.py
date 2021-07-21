@@ -96,5 +96,13 @@ if __name__ == '__main__':
                                args.sa_email,
                                args.audience,
                                expiry_length)
-    print (keyfile_jwt)
+
     make_jwt_request(keyfile_jwt, args.host)
+
+    print("------")
+    print(args.host)
+    print(args.audience)
+    print(args.sa_path)
+    print(args.sa_email)
+
+    print (keyfile_jwt)

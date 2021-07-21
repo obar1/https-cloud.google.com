@@ -26,6 +26,7 @@ function create_api() { #
 }
 
 function enble_api() { #
+# obar1-oauth-009-api-id-2x7rcn4ss72pc.apigateway.coherent-vim-317506.cloud.goog
    gcloud services enable $API_ID-"${1}".apigateway.$PROJECT_ID.cloud.goog
 }
 
@@ -62,7 +63,7 @@ function cleaning_up() { #
 ## Making an authenticated request to an API Gateway API
 
 function client_invocation { #
-   python call.py $defaultHostname/hello $defaultHostname SA_PRIVATE_KEY.json "$SA_OAUTH_API_ID@$PROJECT_ID.iam.gserviceaccount.com"
+   python call.py $defaultHostname/hello $PROJECT_ID SA_PRIVATE_KEY.json "$SA_OAUTH_API_ID@$PROJECT_ID.iam.gserviceaccount.com"
 }
 
 function echo_curl_invoation() { #
@@ -74,7 +75,7 @@ function echo_curl_invoation() { #
 SA_OAUTH_API_ID=sa-oauth-api-id
 API_DEFINITION='api-config-definition.yaml'
 
-ID=obar1-oauth-007
+ID=obar1-oauth-009
 
 API_ID=$ID-api-id
 API_CONFIG_ID=$ID-api-config-id
@@ -86,15 +87,16 @@ case "${1}" in
    # add_role2sa
    # save_key_sa
 
-   # create_api
-   enble_api '1tcz3faqmtksc'
-   deploy_api_config
-   # describe_api_config
-   deploy_api_config_to_gatway
-   # describe_gatway
+   # create_api || true
+   # enble_api '2x7rcn4ss72pc' || true
+   deploy_api_config || true
+   describe_api_config
+   deploy_api_config_to_gatway || true
+   describe_gatway
    ;;
 2 | 'i') ## invocation
-   defaultHostname='https://obar1-oauth-007-gateway-id-d6vhs2p6.uc.gateway.dev'
+# TODO:
+   defaultHostname='https://asass-d6vhs2p6.nw.gateway.dev'
    client_invocation 
    echo_curl_invoation
    ;;
