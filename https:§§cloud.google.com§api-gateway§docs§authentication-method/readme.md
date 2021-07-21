@@ -16,8 +16,8 @@ it's not credentials
 
 enable api key support for your service
 
-```
-cloud services enable API_ID-HASH.apigateway.PROJECT_ID.cloud.goog
+```bash
+gcloud services enable API_ID-HASH.apigateway.PROJECT_ID.cloud.goog
 #For example:
 gcloud services enable my-api-a12bcd345e67f89g0h.apigateway.my-project.cloud.goog
 ```

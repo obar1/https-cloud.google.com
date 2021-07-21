@@ -1,9 +1,9 @@
 # https:§§cloud.google.com§api-gateway§docs§authenticating-users-auth0
 > https://cloud.google.com/api-gateway/docs/authenticating-users-auth0
 
-t o auth  user a client app must send token 
+to auth user a client app must send token 
 https://jwt.io/
-in th auth header of the http  req to the api
+in th auth header of the http req to the api
 api gateway validates the token
 - no need to add code in the api 
 - config api auth
@@ -14,7 +14,7 @@ they are cached and refresh every 5 min
 
 ## Before you begin
 
-add auth code yo client app 
+add auth code to client app 
 https://auth0.com/docs/
 
 then client app sends http req, the auth header must contai
@@ -26,7 +26,7 @@ then client app sends http req, the auth header must contai
 
 ## Configuring API Gateway to support client authentication
 
-in api config for api gateway to avlidate the claims
+in api config for api gateway to validate the claims
 https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md#securityRequirementObject
 ![](2021-07-17-19-40-27.png)
 

@@ -91,7 +91,7 @@ checks on the jwt token
 before api gateway fwd req to  the actual api 
 - signature of jwt using public key // locates in `x-google-jwks_uri`
 - `iss` match `x-google-issuer`
-- `aud` match one of the valuies in `x-google-audiences`
+- `aud` match one of the values in `x-google-audiences`
 - token is not expired `exp`
 
 ![](2021-07-20-23-33-32.png)
@@ -102,3 +102,29 @@ For more information about x-google-issuer, x-google-jwks_uri, and x-google-audi
 https://cloud.google.com/endpoints/docs/openapi/openapi-extensions
 
 ## Making an authenticated request to an API Gateway API
+
+1. create a jwt and sign it with the service account private key
+2. send signed jwt in a req to the api
+
+https://github.com/GoogleCloudPlatform/python-docs-samples/blob/HEAD/endpoints/getting-started/clients/google-jwt-client.py
+
+params
+- sakeyfile
+- saemail
+- audience
+- expirylenght
+
+ex
+```
+python call.py  https://a-test-d6vhs2p6.uc.gateway.dev/hello  https://a-test-d6vhs2p6.uc.gateway.dev          SA_PRIVATE_KEY.json   sa-oauth-api-id@coherent-vim-317506.iam.gserviceaccount.co
+
+
+TOKEN='eyJ0eXAiOiAi....EUFgvw17pSIvrZmw'
+
+curl --request GET \
+  --header "Authorization: Bearer ${TOKEN}" \
+  "https://a-test-d6vhs2p6.uc.gateway.dev/hello"
+```
+
+## Receiving authenticated results in your API
+SKIP:

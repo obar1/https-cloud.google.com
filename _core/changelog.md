@@ -29,19 +29,19 @@ function do_section() {
 
 - https://cloud.google.com/api-gateway/docs/architecture-overview :ok: [`here`](../https:§§cloud.google.com§api-gateway§docs§architecture-overview/readme.md)
 
-- https://cloud.google.com/api-gateway/docs/authenticate-service-account :o: [`here`](../https:§§cloud.google.com§api-gateway§docs§authenticate-service-account/readme.md)
+- https://cloud.google.com/api-gateway/docs/authenticate-service-account :ok: [`here`](../https:§§cloud.google.com§api-gateway§docs§authenticate-service-account/readme.md)
 
 - https://cloud.google.com/api-gateway/docs/authenticating-users-auth0 :o: [`here`](../https:§§cloud.google.com§api-gateway§docs§authenticating-users-auth0/readme.md)
 
 - https://cloud.google.com/api-gateway/docs/authentication-method :ok: [`here`](../https:§§cloud.google.com§api-gateway§docs§authentication-method/readme.md)
 
-- https://cloud.google.com/api-gateway/docs/configure-dev-env :o: [`here`](../https:§§cloud.google.com§api-gateway§docs§configure-dev-env/readme.md)
+- https://cloud.google.com/api-gateway/docs/configure-dev-env :ok: [`here`](../https:§§cloud.google.com§api-gateway§docs§configure-dev-env/readme.md)
 
 - https://cloud.google.com/api-gateway/docs/creating-api :ok: [`here`](../https:§§cloud.google.com§api-gateway§docs§creating-api/readme.md)
 
 - https://cloud.google.com/api-gateway/docs/creating-api-config :ok: [`here`](../https:§§cloud.google.com§api-gateway§docs§creating-api-config/readme.md)
 
-- https://cloud.google.com/api-gateway/docs/deploying-api :o: [`here`](../https:§§cloud.google.com§api-gateway§docs§deploying-api/readme.md)
+- https://cloud.google.com/api-gateway/docs/deploying-api :ok: [`here`](../https:§§cloud.google.com§api-gateway§docs§deploying-api/readme.md)
 
 - https://cloud.google.com/api-gateway/docs/how-to :o: [`here`](../https:§§cloud.google.com§api-gateway§docs§how-to/readme.md)
 
@@ -51,7 +51,7 @@ function do_section() {
 
 - https://cloud.google.com/api-gateway/docs/quickstart :ok: [`here`](../https:§§cloud.google.com§api-gateway§docs§quickstart/readme.md)
 
-- https://cloud.google.com/api-gateway/docs/quotas-overview :o: [`here`](../https:§§cloud.google.com§api-gateway§docs§quotas-overview/readme.md)
+- https://cloud.google.com/api-gateway/docs/quotas-overview :ok: [`here`](../https:§§cloud.google.com§api-gateway§docs§quotas-overview/readme.md)
 
 - https://cloud.google.com/blog/products/data-analytics/create-templates-from-any-dataflow-pipeline :o: [`here`](../https:§§cloud.google.com§blog§products§data-analytics§create-templates-from-any-dataflow-pipeline/readme.md) 
 
