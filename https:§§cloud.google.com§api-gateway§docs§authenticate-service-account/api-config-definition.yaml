@@ -31,3 +31,4 @@ securityDefinitions:
       type: "oauth2"
       x-google-issuer: "sa-oauth-api-id@coherent-vim-317506.iam.gserviceaccount.com"
       x-google-jwks_uri: "https://www.googleapis.com/robot/v1/metadata/x509/sa-oauth-api-id@coherent-vim-317506.iam.gserviceaccount.com"
+      x-google-audiences: "https://obar1-oauth-007-gateway-id-d6vhs2p6.uc.gateway.dev"
