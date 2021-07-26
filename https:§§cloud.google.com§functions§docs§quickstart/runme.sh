@@ -8,11 +8,11 @@ source "${BASE_PATH}"/_core/tools.sh
 ## Deploy a function
 
 function deploy_function() { #
-   cd helloworld || exit
+ `  cd helloworld || exit
 
    gcloud functions deploy hello_get \
       --runtime python39 --trigger-http --allow-unauthenticated
-   cd ..
+   cd ..`
 }
 
 ## Test the function

@@ -87,8 +87,8 @@ case "${1}" in
    # add_role2sa
    # save_key_sa
 
-   # create_api || true
-   # enble_api '2x7rcn4ss72pc' || true
+   create_api || true
+   enble_api '2x7rcn4ss72pc' || true
    deploy_api_config || true
    describe_api_config
    deploy_api_config_to_gatway || true
