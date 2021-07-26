@@ -49,7 +49,7 @@ function do_section() {
 - https://cloud.google.com/docs :o: [`here`](./https:§§cloud.google.com§docs/readme.md)
 - https://cloud.google.com/docs/authentication :o: [`here`](../https:§§cloud.google.com§docs§authentication/readme.md)
 - https://cloud.google.com/endpoints/docs/openapi/authenticating-users-auth0 :o: [`here`](../https:§§cloud.google.com§endpoints§docs§openapi§authenticating-users-auth0/readme.md)
-- https://cloud.google.com/functions :o: [`here`](../https:§§cloud.google.com§functions/readme.md)
+- https://cloud.google.com/functions :ok: [`here`](../https:§§cloud.google.com§functions/readme.md)
 - https://cloud.google.com/functions/docs/quickstart :ok: [`here`](../https:§§cloud.google.com§functions§docs§quickstart/readme.md)
 - https://cloud.google.com/functions/docs/quickstart-python :ok: [`here`](../https:§§cloud.google.com§functions§docs§quickstart-python/readme.md)
 - https://cloud.google.com/iam/docs/creating-managing-service-accounts :ok: [`here`](../https:§§cloud.google.com§iam§docs§creating-managing-service-accounts/readme.md)
@@ -66,3 +66,5 @@ function do_section() {
 - https://cloud.google.com/storage :o: [`here`](../https:§§cloud.google.com§storage/readme.md)
 - https://google.qwiklabs.com/quests/35 :o: [`here`](../https:§§google.qwiklabs.com§quests§35/readme.md)
 - https://google.qwiklabs.com/quests/81 :o: [`here`](../https:§§google.qwiklabs.com§quests§81/readme.md)
+
+- https://cloud.google.com/functions/docs/first-python :ok: [`here`](../https:§§cloud.google.com§functions§docs§first-python/readme.md)

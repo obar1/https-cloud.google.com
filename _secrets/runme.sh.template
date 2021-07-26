@@ -1,38 +1,27 @@
 #!/usr/bin/env bash
 
-# gcloud secrets
-
-SECRETS_PATH="$BASE_PATH/_secrets"
-
-# gcloud auth
-if [[ ! -d "$HOME/.config/gcloud/" ]]; then
-    gcloud auth login
-fi
-
+# TODO: set
+PROJECT_ID=''
 # gcloud project-id
-if [ -z ${PROJECT_ID+x} ]; then
-    PROJECT_ID=myproject-vim-123
+if [ "${PROJECT_ID}" == "" ]; then
+    gcloud projects list
+else
     gcloud config set project $PROJECT_ID
     export PROJECT_ID
-else
-    gcloud projects list
 fi
 echo "using project $(gcloud config get-value project)"
 
-# service account credetials
-GOOGLE_APPLICATION_CREDENTIALS="$SECRETS_PATH/./myproject-vim-123-456.json"
-if [[ ! -f $GOOGLE_APPLICATION_CREDENTIALS ]]; then
-    echo 'File "GOOGLE_APPLICATION_CREDENTIALS" is not there, aborting.'
-fi
-echo 'Using' "$GOOGLE_APPLICATION_CREDENTIALS"
+# region
+# TODO: set
+export GCP_REGION=''
 
 # service account to use
-if [ -z ${SERVICE_ACCOUNT_ID+x} ]; then
-    SERVICE_ACCOUNT_ID='sa-123'
-    export SERVICE_ACCOUNT_ID
-fi
+# TODO: set
+export SERVICE_ACCOUNT_NAME=''
 
-# api key
-# https://cloud.google.com/docs/authentication/api-keys#creating_an_api_key
-API_KEY=my-api-key
-export API_KEY
+# service account credentials
+SECRETS_PATH="$BASE_PATH/../_secrets"
+SA_PRIVATE_KEY_json='SA_PRIVATE_KEY.json'
+# TODO: set
+# export GOOGLE_APPLICATION_CREDENTIALS="${SECRETS_PATH}/${SA_PRIVATE_KEY_json}"
+# export GOOGLE_APPLICATION_CREDENTIALS="${HOME}/${SA_PRIVATE_KEY_json}"
