@@ -64,8 +64,10 @@ from cmd line
 ```
 gcloud functions logs read hello_http
 ```
+![](2021-07-26-22-04-26.png)
 
 from the console
 https://console.cloud.google.com/logs/query;query=resource.type%3D%22cloud_function%22?angularJsUrl=%2Flogs%3Fservice%3Dcloudfunctions.googleapis.com&folder=true&organizationId=true&project=coherent-vim-317506
 
 ![](2021-07-26-19-34-49.png)
+

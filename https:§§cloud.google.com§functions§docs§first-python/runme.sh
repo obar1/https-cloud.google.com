@@ -11,6 +11,13 @@ source "${BASE_PATH}/../_tools/runme.sh"
 
 ### Deploying the function
 
+
+function set_sa() { #
+gcloud iam service-accounts add-iam-policy-binding \
+  $PROJECT_ID-compute@developer.gserviceaccount.com \
+  --member="$SERVICE_ACCOUNT_NAME@$PROJECT_ID.iam.gserviceaccount.com" \
+  --role="roles/iam.serviceAccountUser"
+}
 function deploy_cf() { #
     gcloud functions deploy "$1" \
         --trigger-http \
@@ -29,8 +36,8 @@ function info_cf_url() { #
 
 function ivoke_cf() { #
     FUNCTION_NAME=$1
-    FUNCTION_URL=$2
-    curl "https://$GCP_REGION-$PROJECT_ID.cloudfunctions.net/hello_http?$FUNCTION_NAME=$FUNCTION_URL"
+    param1=$2
+    curl https://$GCP_REGION-$PROJECT_ID.cloudfunctions.net/$FUNCTION_NAME?name=$param1  -H "Authorization: bearer $(gcloud auth print-identity-token)"
 }
 
 ### Viewing logs
@@ -41,15 +48,15 @@ function view_logs_cf() { #
 }
 
 # params
-set -x
+# set -x
 case "${1}" in
 1 | 'r') ## run
     FUNCTION_NAME=hello_http_param
-    deploy_cf $FUNCTION_NAME
+    # deploy_cf $FUNCTION_NAME
     FUNCTION_URL=$(info_cf_url $FUNCTION_NAME)
     echo $FUNCTION_URL
-    # ivoke_cf $FUNCTION_NAME %FUNCTION_URL
-    # view_logs_cf $FUNCTION_NAME
+    ivoke_cf $FUNCTION_NAME 'abc'
+    view_logs_cf $FUNCTION_NAME
     ;;
 2 | 'c') ## clean up
     cleaning_up
