@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+set -u
+set -o pipefail
+# set -e
+# v0.1
+
 ###################
 # some tools
 #################
@@ -41,12 +46,16 @@ function make_dir_section() { # mkdir and readme [dir_from_http]
     # cp "${BASE_PATH}"/runme.template.sh "$section"/runme.md
 }
 
-function add_section_to_changelog() { # add is http://  to toc and add section [dir_from_http]
+function add_section_to_map() { # add is http://  to toc and add section [dir_from_http]
     dir_from_http "${1}"
-    core_folder='_core'
-    core_changelog='changelog.md'
-    echo "- ${1} :o: [\`here\`](../$section/readme.md)" >>"$core_folder/$core_changelog"
-    tail "$core_folder/$core_changelog"
+    map_rel_path="${2}"
+    echo "1.  ${1} :o: [\`here\`](../$section/readme.md)" >>"$map_rel_path"
+    tail "$map_rel_path"
+}
+
+function sort_map() { # sort the map file
+    map_rel_path="${1}"
+    < "$map_rel_path" sort  > tmpfile && mv tmpfile "$map_rel_path"
 }
 
 function convert_pdf_to_txt() { # pdf export [dir_from_http]
@@ -59,6 +68,8 @@ function convert_pdf_to_txt() { # pdf export [dir_from_http]
 function do_section() { # main do to process a section  [http_address]
     http_address="${1}"
     make_dir_section "${http_address}"
-    add_section_to_changelog "${http_address}"
+    map_rel_path="_core/map.md"
+    add_section_to_map "${http_address}" "${map_rel_path}"
+    sort_map "${map_rel_path}"
     convert_pdf_to_txt "${http_address}"
 }

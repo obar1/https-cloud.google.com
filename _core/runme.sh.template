@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -u
 set -o pipefail
-set -e
+# set -e
 # v0.5
 
 BASE_PATH=$(pwd)
