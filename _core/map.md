@@ -17,6 +17,7 @@
 1.  https://cloud.google.com/api-gateway/docs/passing-data :o: [`here`](../https:§§cloud.google.com§api-gateway§docs§passing-data/readme.md)
 1.  https://cloud.google.com/api-gateway/docs/quickstart :ok: [`here`](../https:§§cloud.google.com§api-gateway§docs§quickstart/readme.md)
 1.  https://cloud.google.com/api-gateway/docs/quotas-overview :ok: [`here`](../https:§§cloud.google.com§api-gateway§docs§quotas-overview/readme.md)
+1.  https://cloud.google.com/bigquery/docs :o: [`here`](../https:§§cloud.google.com§bigquery§docs/readme.md)
 1.  https://cloud.google.com/blog/products/data-analytics/create-templates-from-any-dataflow-pipeline :o: [`here`](../https:§§cloud.google.com§blog§products§data-analytics§create-templates-from-any-dataflow-pipeline/readme.md) 
 1.  https://cloud.google.com/dataflow :o: [`here`](../https:§§cloud.google.com§dataflow/readme.md)
 1.  https://cloud.google.com/dataflow/docs/concepts/dataflow-templates :o: [`here`](../https:§§cloud.google.com§dataflow§docs§concepts§dataflow-templates/readme.md)

@@ -4,7 +4,7 @@ set -o pipefail
 set -e
 # v0.5
 
-BASE_PATH=$(pwd)
+BASE_PATH=$(pwd -P)
 export BASE_PATH
 source "${BASE_PATH}/../_secrets/runme.sh"
 source "${BASE_PATH}/../_tools/runme.sh"
