@@ -2,7 +2,7 @@
 
 > <https://cloud.google.com/bigquery/docs/quickstarts>
 
-https://cloud.google.com/bigquery/docs/quickstarts/quickstart-web-ui
-https://cloud.google.com/bigquery/docs/quickstarts/quickstart-command-line
+[`here`](../https:§§cloud.google.com§bigquery§docs§quickstarts§quickstart-web-ui/readme.md)
+[`here`](../https:§§cloud.google.com§bigquery§docs§quickstarts§quickstart-command-line/readme.md)
 https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries
 

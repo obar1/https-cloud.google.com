@@ -66,9 +66,15 @@ function sort_map() { # sort the map file
 
 function convert_pdf_to_txt() { # pdf export [dir_from_http]
     dir_from_http "${1}"
-    echo mv "${section}/*.pdf ${section}/readme.pdf"
-    echo pdftotext "$section"/readme.pdf "$section"/readme.pdf.txt
-    echo ls -r "$section"
+    open "${section}"
+    echo "copy pdf..." 
+    read -sk
+    # echo "process pdf.." 
+    # read -sk
+    # rename the 1st pdf found as readme.pdf 
+    find "${section}" -type f -name "*.pdf" -exec  mv "{}" "${section}/readme.pdf" \; -quit
+    pdftotext  "${section}/readme.pdf" "$section"/readme.pdf.txt
+    code "$section"
 }
 
 function do_section() { # main do to process a section  [http_address]
