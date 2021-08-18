@@ -83,7 +83,7 @@ bq rm --recursive=true babynames
 
 ## Next
 
-https://cloud.google.com/bigquery/docs/bq-command-line-tool
+[`here`](../https:§§cloud.google.com§bigquery§docs§bq-command-line-tool/readme.md)
 https://cloud.google.com/bigquery/docs/loading-data
 https://cloud.google.com/bigquery/docs/query-overview
 https://cloud.google.com/bigquery/docs/reference/libraries

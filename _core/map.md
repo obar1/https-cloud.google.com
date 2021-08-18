@@ -20,17 +20,7 @@
 1. <https://cloud.google.com/api-gateway> :ok: [`here`](../https:§§cloud.google.com§api-gateway/readme.md)
 1. <https://cloud.google.com/apis/docs/cloud-client-libraries> :o: [`here`](../https:§§cloud.google.com§apis§docs§cloud-client-libraries/readme.md)
 1. <https://cloud.google.com/architecture> :o: [`here`](../https:§§cloud.google.com§architecture/readme.md)
-1. <https://cloud.google.com/bigquery/docs/bq-command-line-tool> :ok: [`here`](../https:§§cloud.google.com§bigquery§docs§bq-command-line-tool/readme.md)
-1. <https://cloud.google.com/bigquery/docs/introduction> :ok: [`here`](../https:§§cloud.google.com§bigquery§docs§introduction/readme.md)
-1. <https://cloud.google.com/bigquery/docs/loading-data> :o: [`here`](../https:§§cloud.google.com§bigquery§docs§loading-data/readme.md)
-1. <https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries> :o: [`here`](../https:§§cloud.google.com§bigquery§docs§quickstarts§quickstart-client-libraries/readme.md)
-1. <https://cloud.google.com/bigquery/docs/quickstarts/quickstart-command-line> :ok: [`here`](../https:§§cloud.google.com§bigquery§docs§quickstarts§quickstart-command-line/readme.md)
-1. <https://cloud.google.com/bigquery/docs/quickstarts/quickstart-web-ui> :ok: [`here`](../https:§§cloud.google.com§bigquery§docs§quickstarts§quickstart-web-ui/readme.md)
-1. <https://cloud.google.com/bigquery/docs/quickstarts> :ok: [`here`](../https:§§cloud.google.com§bigquery§docs§quickstarts/readme.md)
-1. <https://cloud.google.com/bigquery/docs/quickstarts> :ok: [`here`](../https:§§cloud.google.com§bigquery§docs§quickstarts/readme.md)
-1. <https://cloud.google.com/bigquery/docs/reference/rest> :o: [`here`](../https:§§cloud.google.com§bigquery§docs§reference§rest/readme.md)
-1. <https://cloud.google.com/bigquery/docs> :o: [`here`](../https:§§cloud.google.com§bigquery§docs/readme.md)
-1. <https://cloud.google.com/bigquery/streaming-data-into-bigquery> :o: [`here`](../https:§§cloud.google.com§bigquery§streaming-data-into-bigquery/readme.md)
+
 1. <https://cloud.google.com/blog/products/data-analytics/create-templates-from-any-dataflow-pipeline> :o: [`here`](../https:§§cloud.google.com§blog§products§data-analytics§create-templates-from-any-dataflow-pipeline/readme.md)
 1. <https://cloud.google.com/blog/topics/developers-practitioners/bigquery-admin-reference-guide-data-governance> :o: [`here`](../https:§§cloud.google.com§blog§topics§developers-practitioners§bigquery-admin-reference-guide-data-governance/readme.md)
 1. <https://cloud.google.com/code/docs/vscode/client-libraries> :o: [`here`](../https:§§cloud.google.com§code§docs§vscode§client-libraries/readme.md)
@@ -74,3 +64,24 @@
 1. <https://cloud.google.com/storage> :o: [`here`](../https:§§cloud.google.com§storage/readme.md)
 1. <https://google.qwiklabs.com/quests/35> :o: [`here`](../https:§§google.qwiklabs.com§quests§35/readme.md)
 1. <https://google.qwiklabs.com/quests/81> :o: [`here`](../https:§§google.qwiklabs.com§quests§81/readme.md)
+1. <https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries> :o: [`here`](../https:§§cloud.google.com§bigquery§docs§quickstarts§quickstart-client-libraries/readme.md)
+1. <https://cloud.google.com/bigquery/docs/quickstarts/quickstart-command-line> :ok: [`here`](../https:§§cloud.google.com§bigquery§docs§quickstarts§quickstart-command-line/readme.md)
+1. <https://cloud.google.com/bigquery/docs/bq-command-line-tool> :ok: [`here`](../https:§§cloud.google.com§bigquery§docs§bq-command-line-tool/readme.md)
+1. <https://cloud.google.com/bigquery/docs/quickstarts/quickstart-web-ui> :ok: [`here`](../https:§§cloud.google.com§bigquery§docs§quickstarts§quickstart-web-ui/readme.md)
+1. <https://cloud.google.com/bigquery/docs/introduction> :ok: [`here`](../https:§§cloud.google.com§bigquery§docs§introduction/readme.md)
+1. <https://cloud.google.com/bigquery/docs/quickstarts> :ok: [`here`](../https:§§cloud.google.com§bigquery§docs§quickstarts/readme.md)
+
+## wip
+
+1. <https://cloud.google.com/bigquery/docs> :o: [`here`](../https:§§cloud.google.com§bigquery§docs/readme.md)
+
+1. <https://cloud.google.com/bigquery/docs/loading-data> :o: [`here`](../https:§§cloud.google.com§bigquery§docs§loading-data/readme.md)
+
+1. <https://cloud.google.com/bigquery/docs/reference/rest> :o: [`here`](../https:§§cloud.google.com§bigquery§docs§reference§rest/readme.md)
+
+1. <https://cloud.google.com/bigquery/streaming-data-into-bigquery> :o: [`here`](../https:§§cloud.google.com§bigquery§streaming-data-into-bigquery/readme.md)1. <https://cloud.google.com/architecture/bigquery-data-warehouse> :o: [`here`](../https:§§cloud.google.com§architecture§bigquery-data-warehouse/readme.md)
+1. <https://cloud.google.com/bigquery/streaming-data-into-bigquery> :o: [`here`](../https:§§cloud.google.com§bigquery§streaming-data-into-bigquery/readme.md)
+1. <https://cloud.google.com/bigquery/docs/reference/bq-cli-reference> :o: [`here`](../https:§§cloud.google.com§bigquery§docs§reference§bq-cli-reference/readme.md)
+1. <https://cloud.google.com/bigquery/docs/introduction> :o: [`here`](../https:§§cloud.google.com§bigquery§docs§introduction/readme.md)
+1. <https://cloud.google.com/bigquery/docs/how-to> :o: [`here`](../https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
+1. <https://cloud.google.com/bigquery/docs/running-queries> :o: [`here`](../https:§§cloud.google.com§bigquery§docs§running-queries/readme.md)
