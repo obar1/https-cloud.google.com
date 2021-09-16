@@ -4,7 +4,7 @@
 
 BigQuery is Google Cloud's fully managed, petabyte-scale, and cost-effective analytics data warehouse that lets you run analytics over vast amounts of data in near real time. With BigQuery, there's no infrastructure to set up or manage, letting you focus on finding meaningful insights using standard SQL and taking advantage of flexible pricing models across on-demand and flat-rate options.
 
-https://cloud.google.com/bigquery/docs/introduction
+[`here`](../https:§§cloud.google.com§bigquery§docs§introduction/readme.md)
 
 ## Guides
 
