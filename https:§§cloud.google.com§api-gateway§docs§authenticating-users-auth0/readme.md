@@ -2,7 +2,7 @@
 > https://cloud.google.com/api-gateway/docs/authenticating-users-auth0
 
 to auth user a client app must send token 
-https://jwt.io/
+[https://jwt.io/](/https:§§jwt.io§/readme.md)
 in th auth header of the http req to the api
 api gateway validates the token
 - no need to add code in the api 
@@ -15,7 +15,7 @@ they are cached and refresh every 5 min
 ## Before you begin
 
 add auth code to client app 
-https://auth0.com/docs/
+[https://auth0.com/docs/](/https:§§auth0.com§docs§/readme.md)
 
 then client app sends http req, the auth header must contai
 - iss
@@ -27,10 +27,10 @@ then client app sends http req, the auth header must contai
 ## Configuring API Gateway to support client authentication
 
 in api config for api gateway to validate the claims
-https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md#securityRequirementObject
+[https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md#securityRequirementObject](/https:§§github.com§OAI§OpenAPI-Specification§blob§main§versions§2.0.md#securityRequirementObject/readme.md)
 ![](2021-07-17-19-40-27.png)
 
-https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md#securityDefinitionsObject
+[https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md#securityDefinitionsObject](/https:§§github.com§OAI§OpenAPI-Specification§blob§main§versions§2.0.md#securityDefinitionsObject/readme.md)
 ![](2021-07-17-19-37-49.png)
 
 1.
@@ -67,7 +67,7 @@ curl --request POST \
 ```
 GATEWAY_URL and TOKEN are environment variables containing your deployed gateway URL and auth token
 see
-https://cloud.google.com/api-gateway/docs/authenticate-service-account#making_an_authenticated_request
+[https://cloud.google.com/api-gateway/docs/authenticate-service-account#making_an_authenticated_request](/https:§§cloud.google.com§api-gateway§docs§authenticate-service-account#making_an_authenticated_request/readme.md)
 
 you cannot use the header when sending the request, you can put the authentication token in a query parameter called access_token. For example:
 

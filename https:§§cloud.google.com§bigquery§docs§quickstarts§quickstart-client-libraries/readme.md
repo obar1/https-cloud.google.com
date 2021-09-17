@@ -24,7 +24,7 @@ pip install --upgrade google-cloud-bigquery
 
 ## Import the libraries
 
-https://github.com/googleapis/python-bigquery/blob/35627d145a41d57768f19d4392ef235928e00f72/samples/snippets/simple_app.py
+[https://github.com/googleapis/python-bigquery/blob/35627d145a41d57768f19d4392ef235928e00f72/samples/snippets/simple_app.py](/https:§§github.com§googleapis§python-bigquery§blob§35627d145a41d57768f19d4392ef235928e00f72§samples§snippets§simple_app.py/readme.md)
 
 ```py
 from google.cloud import bigquery
@@ -32,7 +32,7 @@ from google.cloud import bigquery
 
 ## Initialize a BigQuery client
 
-https://googleapis.dev/python/bigquery/latest/generated/google.cloud.bigquery.client.Client.html
+[https://googleapis.dev/python/bigquery/latest/generated/google.cloud.bigquery.client.Client.html](/https:§§googleapis.dev§python§bigquery§latest§generated§google.cloud.bigquery.client.Client.html/readme.md)
 
 ```py
 client = bigquery.Client()
@@ -59,7 +59,7 @@ LIMIT 10
 
 Query using the authenticated BigQuery client.
 
-https://googleapis.dev/python/bigquery/latest/generated/google.cloud.bigquery.client.Client.html
+[https://googleapis.dev/python/bigquery/latest/generated/google.cloud.bigquery.client.Client.html](/https:§§googleapis.dev§python§bigquery§latest§generated§google.cloud.bigquery.client.Client.html/readme.md)
 
 ```py
 query_job = client.query(
@@ -78,25 +78,25 @@ query_job = client.query(
 results = query_job.result()  # Waits for job to complete.
 ```
 
-https://cloud.google.com/bigquery/docs/query-overview
-https://cloud.google.com/bigquery/docs/running-queries
-https://cloud.google.com/bigquery/docs/writing-results
+[https://cloud.google.com/bigquery/docs/query-overview](/https:§§cloud.google.com§bigquery§docs§query-overview/readme.md)
+[https://cloud.google.com/bigquery/docs/running-queries](/https:§§cloud.google.com§bigquery§docs§running-queries/readme.md)
+[https://cloud.google.com/bigquery/docs/writing-results](/https:§§cloud.google.com§bigquery§docs§writing-results/readme.md)
 
 ## Displaying the query result
 
-https://googleapis.dev/python/bigquery/latest/generated/google.cloud.bigquery.table.RowIterator.html
-https://googleapis.dev/python/bigquery/latest/generated/google.cloud.bigquery.table.Row.html
+[https://googleapis.dev/python/bigquery/latest/generated/google.cloud.bigquery.table.RowIterator.html](/https:§§googleapis.dev§python§bigquery§latest§generated§google.cloud.bigquery.table.RowIterator.html/readme.md)
+[https://googleapis.dev/python/bigquery/latest/generated/google.cloud.bigquery.table.Row.html](/https:§§googleapis.dev§python§bigquery§latest§generated§google.cloud.bigquery.table.Row.html/readme.md)
 
 ```py
 for row in results:
     print("{} : {} views".format(row.url, row.view_count))
 ```
-https://cloud.google.com/bigquery/docs/managing-table-data#browse-table
-https://cloud.google.com/bigquery/docs/loading-data
+[https://cloud.google.com/bigquery/docs/managing-table-data#browse-table](/https:§§cloud.google.com§bigquery§docs§managing-table-data#browse-table/readme.md)
+[https://cloud.google.com/bigquery/docs/loading-data](/https:§§cloud.google.com§bigquery§docs§loading-data/readme.md)
 
 ## Complete source code
 
-https://github.com/googleapis/python-bigquery/blob/35627d145a41d57768f19d4392ef235928e00f72/samples/snippets/simple_app.py
+[https://github.com/googleapis/python-bigquery/blob/35627d145a41d57768f19d4392ef235928e00f72/samples/snippets/simple_app.py](/https:§§github.com§googleapis§python-bigquery§blob§35627d145a41d57768f19d4392ef235928e00f72§samples§snippets§simple_app.py/readme.md)
 
 ```py
 from google.cloud import bigquery

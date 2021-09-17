@@ -71,6 +71,6 @@ configure the api auth method
 - Google ID tokens https://cloud.google.com/endpoints/docs/openapi/glossary#google_id_token
 
 or more information, see the GCP Auth guide.
-https://cloud.google.com/docs/authentication
+[https://cloud.google.com/docs/authentication](/https:§§cloud.google.com§docs§authentication/readme.md)
 
 

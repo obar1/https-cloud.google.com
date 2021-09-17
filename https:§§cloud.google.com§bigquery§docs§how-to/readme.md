@@ -9,20 +9,20 @@ SKIP:
 ## Running and managing jobs
 
 Introduction to jobs
-https://cloud.google.com/bigquery/docs/jobs-overview
+[https://cloud.google.com/bigquery/docs/jobs-overview](/https:§§cloud.google.com§bigquery§docs§jobs-overview/readme.md)
 
 Running jobs programmatically
-https://cloud.google.com/bigquery/docs/running-jobs
+[https://cloud.google.com/bigquery/docs/running-jobs](/https:§§cloud.google.com§bigquery§docs§running-jobs/readme.md)
 
 Managing jobs
-https://cloud.google.com/bigquery/docs/managing-jobs
+[https://cloud.google.com/bigquery/docs/managing-jobs](/https:§§cloud.google.com§bigquery§docs§managing-jobs/readme.md)
 
 Working with datasets
 
 Introduction to datasets
 An introduction to BigQuery datasets.
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 2/28
 
@@ -46,7 +46,7 @@ How to control access to datasets in BigQuery. (/bigquery/docs/dataset-access-co
 Listing datasets
 How to list datasets in BigQuery projects.
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 3/28
 
@@ -69,7 +69,7 @@ datasets. (/bigquery/docs/managing-datasets)
 Availability and durability
 Understand availability and durability of your datasets if a disaster occurs. (/bigquery/docs/availability)
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 4/28
 
@@ -90,7 +90,7 @@ Modifying table schemas
 Modify table schema definitions including adding columns, renaming columns,
 deleting columns, and changing column names, data types, and modes. (/bigquery/docs/managing-table-schemas)
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 5/28
 
@@ -116,7 +116,7 @@ data, modifying table data, exporting data, and appending or overwriting data. (
 Exporting table data
 How to export table data to Cloud Storage.
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 6/28
 
@@ -141,7 +141,7 @@ Managing partitioned tables
 How to manage partitioned tables including updating properties, copying
 partitions, and deleting partitions.
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 7/28
 
@@ -165,7 +165,7 @@ Working with clustered tables
 Introduction to clustered tables
 An introduction to clustered tables in BigQuery.
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 8/28
 
@@ -188,7 +188,7 @@ An introduction to BigQuery views. (/bigquery/docs/views-intro)
 Creating views
 How to create views.
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 9/28
 
@@ -214,7 +214,7 @@ Updating views
 How to update view properties including descriptions, expiration times, and SQL
 queries.
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 10/28
 
@@ -236,7 +236,7 @@ Create and use materialized views. (/bigquery/docs/materialized-views)
 Best practices for materialized views
 Best practices for materialized views.
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 11/28
 
@@ -257,7 +257,7 @@ Concepts related to Reservations. (/bigquery/docs/reservations-concepts)
 
 Workload management
 Using Reservations for workload management.
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 12/28
 
@@ -278,7 +278,7 @@ Using INFORMATION_SCHEMA to retrieve metadata about datasets. (/bigquery/docs/in
 Getting routine metadata
 Using INFORMATION_SCHEMA to retrieve metadata about routines.
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 13/28
 
@@ -299,7 +299,7 @@ An introduction to labeling resources in BigQuery. (/bigquery/docs/labels-intro)
 
 Adding labels
 Add labels to group resources by purpose, environment, department, and so on.
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 14/28
 
@@ -316,7 +316,7 @@ Deleting labels on BigQuery resources. (/bigquery/docs/deleting-labels)
 
 How-to guides | BigQuery | Google Cloud
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 15/28
 
@@ -342,7 +342,7 @@ How to load Parquet data from Cloud Storage. (/bigquery/docs/loading-data-cloud-
 Loading ORC data from Cloud Storage
 How to load ORC data from Cloud Storage.
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 16/28
 
@@ -366,7 +366,7 @@ How to load data from a Firestore export. (/bigquery/docs/loading-data-cloud-fir
 Loading data from a local data source
 How to load data from a local data source.
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 17/28
 
@@ -388,7 +388,7 @@ Performing a query dry run
 How to perform a dry run for a query job to estimate the amount of data
 processed.
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 18/28
 
@@ -411,7 +411,7 @@ Query several tables concisely using a wildcard table. (/bigquery/docs/querying-
 
 Saving and sharing queries
 Save and share queries.
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 19/28
 
@@ -436,7 +436,7 @@ Introduction to external data sources
 Query data directly from external data sources such as Cloud Storage,
 Cloud Bigtable, and Drive.
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 20/28
 
@@ -459,7 +459,7 @@ Use BigQuery to query data stored in Cloud Storage. (/bigquery/external-data-clo
 
 Querying Drive data
 Use BigQuery to query data stored in Drive.
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 21/28
 
@@ -481,7 +481,7 @@ Manage costs by setting custom quotas on query processing. (/bigquery/docs/custo
 Best practices for controlling costs
 Best practices for controlling costs in BigQuery.
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 22/28
 
@@ -504,7 +504,7 @@ Access control use cases in BigQuery. (/bigquery/docs/access-control-examples)
 Introduction to Column-level security (beta)
 Learn about BigQuery Column-level security.
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 23/28
 
@@ -525,7 +525,7 @@ Use Cloud Data Loss Prevention to identify and protect sensitive BigQuery data. 
 Protecting data with Cloud KMS keys
 Use customer-managed encryption keys (CMEK) for BigQuery. (/bigquery/docs/customer-managed-encryption)
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 24/28
 
@@ -545,7 +545,7 @@ BigQuery API basics
 Introduction to authentication
 Perform authentication in various application scenarios.
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 25/28
 
@@ -569,7 +569,7 @@ Authorize API requests with access tokens. (/bigquery/docs/authorization)
 Batch requests
 Reduce the number of HTTP connections your client has to make by batching API
 calls.
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 26/28
 
@@ -591,7 +591,7 @@ Best practices for controlling costs in BigQuery. (/bigquery/docs/best-practices
 Optimizing query performance
 Best practices for optimizing query performance in BigQuery.
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 27/28
 
@@ -603,7 +603,7 @@ How-to guides | BigQuery | Google Cloud
 Optimizing storage
 Best practices for optimizing BigQuery storage. (/bigquery/docs/best-practices-storage)
 
-https://cloud.google.com/bigquery/docs/how-to
+[https://cloud.google.com/bigquery/docs/how-to](/https:§§cloud.google.com§bigquery§docs§how-to/readme.md)
 
 28/28
 

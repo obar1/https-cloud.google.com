@@ -16,9 +16,9 @@
 
 when deploying an api config to the gateway the api gateway creates uniq url on `gateway.dev`
 ```
-https://GATEWAY_ID-HASH.REGION_CODE.gateway.dev
+[https://GATEWAY_ID-HASH.REGION_CODE.gateway.dev](/https:§§GATEWAY_ID-HASH.REGION_CODE.gateway.dev/readme.md)
 # For example:
-https://my-gateway-a12bcd345e67f89g0h.uc.gateway.dev
+[https://my-gateway-a12bcd345e67f89g0h.uc.gateway.dev](/https:§§my-gateway-a12bcd345e67f89g0h.uc.gateway.dev/readme.md)
 ```
 
 ## Deploy an API config to a gateway

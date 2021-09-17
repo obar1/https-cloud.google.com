@@ -4,7 +4,7 @@
 ## Before you begin
 
 enable api
-https://console.cloud.google.com/flows/enableapi?apiid=cloudfunctions,cloudbuild.googleapis.com&redirect=https://cloud.google.com/functions/quickstart&_ga=2.195397676.1808267204.1624474724-1468234203.1624256121
+[https://console.cloud.google.com/flows/enableapi?apiid=cloudfunctions,cloudbuild.googleapis.com&redirect=https://cloud.google.com/functions/quickstart&_ga=2.195397676.1808267204.1624474724-1468234203.1624256121](/https:§§console.cloud.google.com§flows§enableapi?apiid=cloudfunctions,cloudbuild.googleapis.com&redirect=https:§§cloud.google.com§functions§quickstart&_ga=2.195397676.1808267204.1624474724-1468234203.1624256121/readme.md)
 
 update components
 
@@ -56,7 +56,7 @@ check what to do
 gcloud functions describe hello_get
 ```
 
-https://us-central1-coherent-vim-317506.cloudfunctions.net/hello_get
+[https://us-central1-coherent-vim-317506.cloudfunctions.net/hello_get](/https:§§us-central1-coherent-vim-317506.cloudfunctions.net§hello_get/readme.md)
 
 
 Visit this URL in your browser. You should see a Hello World! message.

@@ -1,23 +1,23 @@
 # Get started with Google-provided templates
 
 check the repo
-https://github.com/GoogleCloudPlatform/DataflowTemplates
+[https://github.com/GoogleCloudPlatform/DataflowTemplates](/https:§§github.com§GoogleCloudPlatform§DataflowTemplates/readme.md)
 
 ## Streaming templates - Templates for processing data continuously:
 
-https://cloud.google.com/dataflow/docs/guides/templates/provided-streaming#cloudpubsubsubscriptiontobigquery
+[https://cloud.google.com/dataflow/docs/guides/templates/provided-streaming#cloudpubsubsubscriptiontobigquery](/https:§§cloud.google.com§dataflow§docs§guides§templates§provided-streaming#cloudpubsubsubscriptiontobigquery/readme.md)
 ...
 ![](2021-06-18-15-41-54.png)
 
 ## Batch templates - Templates for processing data in bulk:
 
-https://cloud.google.com/dataflow/docs/guides/templates/provided-batch#bigquerytogcstfrecords
+[https://cloud.google.com/dataflow/docs/guides/templates/provided-batch#bigquerytogcstfrecords](/https:§§cloud.google.com§dataflow§docs§guides§templates§provided-batch#bigquerytogcstfrecords/readme.md)
 ...
 ![](2021-06-18-15-42-22.png)
 
 ## Utility templates:
 
-https://cloud.google.com/dataflow/docs/guides/templates/provided-utilities#bulkcompressgcsfiles
+[https://cloud.google.com/dataflow/docs/guides/templates/provided-utilities#bulkcompressgcsfiles](/https:§§cloud.google.com§dataflow§docs§guides§templates§provided-utilities#bulkcompressgcsfiles/readme.md)
 ...
 ![](2021-06-18-15-42-42.png)
 

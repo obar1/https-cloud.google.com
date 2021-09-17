@@ -4,17 +4,17 @@
 
 ## What is Pub/Sub?
 
-https://youtu.be/MjEam95VLiI
+[https://youtu.be/MjEam95VLiI](/https:§§youtu.be§MjEam95VLiI/readme.md)
 
 Pub/Sub allows services to communicate asynchronously, with latencies on the order of 100 milliseconds. 
 Pub/Sub is used for streaming analytics and data integration pipelines to ingest and distribute data. 
 Pub/Sub enables you to create systems of event producers and consumers, called publishers and subscribers. 
  
 TODO:
-https://cloud.google.com/pubsub/docs/quickstart-console
+[https://cloud.google.com/pubsub/docs/quickstart-console](/https:§§cloud.google.com§pubsub§docs§quickstart-console/readme.md)
 
 TODO:
-https://cloud.google.com/pubsub/docs/building-pubsub-messaging-system
+[https://cloud.google.com/pubsub/docs/building-pubsub-messaging-system](/https:§§cloud.google.com§pubsub§docs§building-pubsub-messaging-system/readme.md)
 
 ## Common use cases
  
@@ -28,7 +28,7 @@ https://cloud.google.com/pubsub/docs/building-pubsub-messaging-system
 
 ## Pub/Sub or Pub/Sub Lite
 
-https://cloud.google.com/pubsub/lite/docs/quickstart
+[https://cloud.google.com/pubsub/lite/docs/quickstart](/https:§§cloud.google.com§pubsub§lite§docs§quickstart/readme.md)
 
 
 ## Comparing Pub/Sub to other messaging technologies

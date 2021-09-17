@@ -4,7 +4,7 @@
 
 ## Fundamentals of Cloud Logging
 
-https://google.qwiklabs.com/focuses/10911?parent=catalog
+[https://google.qwiklabs.com/focuses/10911?parent=catalog](/https:§§google.qwiklabs.com§focuses§10911?parent=catalog/readme.md)
 
 pdf [here](./qwiklabs.com-Fundamentals of Cloud Logging.pdf)
 
@@ -36,7 +36,7 @@ SWITCH TO NATIVE MODE
 
 ### Log based metrics
 
-https://cloud.google.com/logging/docs/logs-based-metrics/
+[https://cloud.google.com/logging/docs/logs-based-metrics/](/https:§§cloud.google.com§logging§docs§logs-based-metrics§/readme.md)
 
 ### Create a counter metric
 
@@ -50,7 +50,7 @@ https://cloud.google.com/logging/docs/logs-based-metrics/
 
 ### Other
 
-https://cloud.google.com/logging/docs/reference/v2/rest/v2/LogEntry
+[https://cloud.google.com/logging/docs/reference/v2/rest/v2/LogEntry](/https:§§cloud.google.com§logging§docs§reference§v2§rest§v2§LogEntry/readme.md)
 
 ## Using BigQuery and Cloud Logging to AnalyzeBigQuery Usage
 

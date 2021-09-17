@@ -11,7 +11,7 @@
 
 
 - AI Platform 
-https://cloud.google.com/ai-platform/docs
+[https://cloud.google.com/ai-platform/docs](/https:§§cloud.google.com§ai-platform§docs/readme.md)
 
 ### API Management
 
@@ -26,10 +26,10 @@ https://cloud.google.com/ai-platform/docs
 ![](2021-07-25-20-29-27.png)
 
 - BigQuery
-https://cloud.google.com/bigquery/docs
+[https://cloud.google.com/bigquery/docs](/https:§§cloud.google.com§bigquery§docs/readme.md)
 
 - Pub/Sub
-https://cloud.google.com/pubsub/docs
+[https://cloud.google.com/pubsub/docs](/https:§§cloud.google.com§pubsub§docs/readme.md)
 
 ![](2021-07-25-20-30-34.png)
 

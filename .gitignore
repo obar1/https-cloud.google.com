@@ -3,3 +3,4 @@
 *.pdf.txt
 __pycache__
 secrets.txt
+0to100/**

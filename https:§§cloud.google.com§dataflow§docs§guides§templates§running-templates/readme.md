@@ -6,7 +6,7 @@ template file references files at template creation
 
 ### Google-provided templates
 
-https://console.cloud.google.com/dataflow/
+[https://console.cloud.google.com/dataflow/](/https:§§console.cloud.google.com§dataflow§/readme.md)
 
 ![](2021-06-18-19-37-11.png)
 
@@ -23,11 +23,11 @@ use additional param to pass to the logic
 
 use rest api request
 
-https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.templates/launch
+[https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.templates/launch](/https:§§cloud.google.com§dataflow§docs§reference§rest§v1b3§projects.templates§launch/readme.md)
 > authorization is required
 
 response is type 
-https://cloud.google.com/dataflow/docs/reference/rest/v1b3/LaunchTemplateResponse
+[https://cloud.google.com/dataflow/docs/reference/rest/v1b3/LaunchTemplateResponse](/https:§§cloud.google.com§dataflow§docs§reference§rest§v1b3§LaunchTemplateResponse/readme.md)
 
 ### Example 1: Creating a custom template batch job
 
@@ -90,12 +90,12 @@ you how to update a template streaming job
 
 to verify job update you can use the 
 
-https://cloud.google.com/dataflow/docs/guides/using-monitoring-intf#accessing_the_cloud_dataflow_monitoring_interface
+[https://cloud.google.com/dataflow/docs/guides/using-monitoring-intf#accessing_the_cloud_dataflow_monitoring_interface](/https:§§cloud.google.com§dataflow§docs§guides§using-monitoring-intf#accessing_the_cloud_dataflow_monitoring_interface/readme.md)
 
 ## Using the Google API Client Libraries
 
 > Consider using the Google API Client Libraries to easily make calls to the Dataflow REST APIs
-https://developers.google.com/api-client-library/
+[https://developers.google.com/api-client-library/](/https:§§developers.google.com§api-client-library§/readme.md)
 
 ```python
 from googleapiclient.discovery import build
@@ -150,7 +150,7 @@ gcloud dataflow jobs run JOB_NAME \
 ## Monitoring and Troubleshooting
 
 to monitor a job
-https://cloud.google.com/dataflow/docs/guides/using-monitoring-intf
+[https://cloud.google.com/dataflow/docs/guides/using-monitoring-intf](/https:§§cloud.google.com§dataflow§docs§guides§using-monitoring-intf/readme.md)
 
 for failed jobs you can trouble shoot
-https://cloud.google.com/dataflow/docs/guides/troubleshooting-your-pipeline
+[https://cloud.google.com/dataflow/docs/guides/troubleshooting-your-pipeline](/https:§§cloud.google.com§dataflow§docs§guides§troubleshooting-your-pipeline/readme.md)

@@ -3,10 +3,10 @@
 > title is different from the page 
 
 new dataflow flex templates
-https://cloud.google.com/dataflow/docs/concepts/dataflow-templates#templated-dataflow-jobs
+[https://cloud.google.com/dataflow/docs/concepts/dataflow-templates#templated-dataflow-jobs](/https:§§cloud.google.com§dataflow§docs§concepts§dataflow-templates#templated-dataflow-jobs/readme.md)
 vs
 classic templates
-https://cloud.google.com/dataflow/docs/concepts/dataflow-templates#templated-dataflow-jobs
+[https://cloud.google.com/dataflow/docs/concepts/dataflow-templates#templated-dataflow-jobs](/https:§§cloud.google.com§dataflow§docs§concepts§dataflow-templates#templated-dataflow-jobs/readme.md)
 
 classic templates more rigid 
 - execution graph is fixed
@@ -40,7 +40,7 @@ before templates
 with classic templates
 - pipeline converted in a dataflow template // stored in cloud storage
 
-https://cloud.google.com/dataflow/docs/guides/templates/creating-templates#creating-and-staging-templates
+[https://cloud.google.com/dataflow/docs/guides/templates/creating-templates#creating-and-staging-templates](/https:§§cloud.google.com§dataflow§docs§guides§templates§creating-templates#creating-and-staging-templates/readme.md)
 it consists 
 - json execution graph
 - dep //pipeline artifacts and 3rd party
@@ -70,12 +70,12 @@ the staged docker images is built
 - pipeline artifacts
 - env vars
 
-https://github.com/GoogleCloudPlatform/DataflowTemplates/tree/master/v2/streaming-data-generator#creating-template-spec
+[https://github.com/GoogleCloudPlatform/DataflowTemplates/tree/master/v2/streaming-data-generator#creating-template-spec](/https:§§github.com§GoogleCloudPlatform§DataflowTemplates§tree§master§v2§streaming-data-generator#creating-template-spec/readme.md)
 contains all the info to run the job
 
 execute it 
 - gcloud comand
-https://cloud.google.com/sdk/gcloud/reference/beta/dataflow/flex-template
+[https://cloud.google.com/sdk/gcloud/reference/beta/dataflow/flex-template](/https:§§cloud.google.com§sdk§gcloud§reference§beta§dataflow§flex-template/readme.md)
 - rest api
 - dataflow
 - cloud scheduler 
@@ -96,10 +96,10 @@ source cod https://github.com/GoogleCloudPlatform/DataflowTemplates
 
 ![](2021-06-18-15-14-15.png)
 
-https://cloud.google.com/blog/products/gcp/analyzing-tweets-using-cloud-dataflow-pipeline-templates?hl=id
-https://cloud.google.com/blog/products/data-analytics/dataflow-flex-template-streaming-data-generator
-https://cloud.google.com/blog/products/gcp/analyzing-tweets-using-cloud-dataflow-pipeline-templates?hl=id
-https://github.com/GoogleCloudPlatform/dlp-dataflow-deidentification
+[https://cloud.google.com/blog/products/gcp/analyzing-tweets-using-cloud-dataflow-pipeline-templates?hl=id](/https:§§cloud.google.com§blog§products§gcp§analyzing-tweets-using-cloud-dataflow-pipeline-templates?hl=id/readme.md)
+[https://cloud.google.com/blog/products/data-analytics/dataflow-flex-template-streaming-data-generator](/https:§§cloud.google.com§blog§products§data-analytics§dataflow-flex-template-streaming-data-generator/readme.md)
+[https://cloud.google.com/blog/products/gcp/analyzing-tweets-using-cloud-dataflow-pipeline-templates?hl=id](/https:§§cloud.google.com§blog§products§gcp§analyzing-tweets-using-cloud-dataflow-pipeline-templates?hl=id/readme.md)
+[https://github.com/GoogleCloudPlatform/dlp-dataflow-deidentification](/https:§§github.com§GoogleCloudPlatform§dlp-dataflow-deidentification/readme.md)
 
 and when done share the flex template with team
 ![](2021-06-18-15-14-59.png)

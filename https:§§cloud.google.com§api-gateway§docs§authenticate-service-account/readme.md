@@ -7,7 +7,7 @@ authenticate services - not only humans -  for api req
 
 to identify a service that sends req to  api use sa
 the calling service uses sa private key to sign a secure json web token 
-https://jwt.io/
+[https://jwt.io/](/https:§§jwt.io§/readme.md)
 > JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties.
 and sends signed req to the api
 
@@ -60,8 +60,8 @@ gcloud iam service-accounts keys create FILE_NAME.json \
 
 ## Configuring your API to support authentication
 
-https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md#securityRequirementObject
-https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md#securityDefinitionsObject
+[https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md#securityRequirementObject](/https:§§github.com§OAI§OpenAPI-Specification§blob§main§versions§2.0.md#securityRequirementObject/readme.md)
+[https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md#securityDefinitionsObject](/https:§§github.com§OAI§OpenAPI-Specification§blob§main§versions§2.0.md#securityDefinitionsObject/readme.md)
 
 we need to enable api gateway to validate the claims in the signed jwt used calling services
 
@@ -72,7 +72,7 @@ we need to enable api gateway to validate the claims in the signed jwt used call
 ex
 ![](2021-07-21-09-33-52.png)
 
-https://www.googleapis.com/robot/v1/metadata/x509/sa-oauth-api-id@coherent-vim-317506.iam.gserviceaccount.com
+[https://www.googleapis.com/robot/v1/metadata/x509/sa-oauth-api-id@coherent-vim-317506.iam.gserviceaccount.com](/https:§§www.googleapis.com§robot§v1§metadata§x509§sa-oauth-api-id@coherent-vim-317506.iam.gserviceaccount.com/readme.md)
 
 
 * optionally add `x-google-audiences`
@@ -105,14 +105,14 @@ before api gateway fwd req to  the actual api
 ![](2021-07-20-23-33-03.png)
 
 For more information about x-google-issuer, x-google-jwks_uri, and x-google-audiences, see
-https://cloud.google.com/endpoints/docs/openapi/openapi-extensions
+[https://cloud.google.com/endpoints/docs/openapi/openapi-extensions](/https:§§cloud.google.com§endpoints§docs§openapi§openapi-extensions/readme.md)
 
 ## Making an authenticated request to an API Gateway API
 
 1. create a jwt and sign it with the service account private key
 2. send signed jwt in a req to the api
 
-https://github.com/GoogleCloudPlatform/python-docs-samples/blob/HEAD/endpoints/getting-started/clients/google-jwt-client.py
+[https://github.com/GoogleCloudPlatform/python-docs-samples/blob/HEAD/endpoints/getting-started/clients/google-jwt-client.py](/https:§§github.com§GoogleCloudPlatform§python-docs-samples§blob§HEAD§endpoints§getting-started§clients§google-jwt-client.py/readme.md)
 
 params
 - sakeyfile

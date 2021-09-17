@@ -11,9 +11,9 @@ using the `gcloud` cmd line
 example going to use
 DataflowPub/SubCloud StorageCloud SchedulerApp EngineContainer RegistryCloud BuildBigQuery
 
-https://cloud.google.com/products/calculator
+[https://cloud.google.com/products/calculator](/https:§§cloud.google.com§products§calculator/readme.md)
 
-https://cloud.google.com/dataflow/pricing
+[https://cloud.google.com/dataflow/pricing](/https:§§cloud.google.com§dataflow§pricing/readme.md)
 ![](2021-06-21-16-53-32.png)
 
 small sample 
@@ -25,7 +25,7 @@ small sample
 
 Enable the Dataflow, Compute Engine, Logging, Cloud Storage, Cloud StorageJSON, BigQuery, Pub/Sub, Resource Manager, App Engine, Cloud Scheduler, andCloud Build APIs
 
-https://console.cloud.google.com/flows/enableapi?apiid=dataflow,compute_component,logging,storage_component,storage_api,bigquery,pubsub,cloudresourcemanager.googleapis.com,appengine.googleapis.com,cloudscheduler.googleapis.com,cloudbuild.googleapis.com
+[https://console.cloud.google.com/flows/enableapi?apiid=dataflow,compute_component,logging,storage_component,storage_api,bigquery,pubsub,cloudresourcemanager.googleapis.com,appengine.googleapis.com,cloudscheduler.googleapis.com,cloudbuild.googleapis.com](/https:§§console.cloud.google.com§flows§enableapi?apiid=dataflow,compute_component,logging,storage_component,storage_api,bigquery,pubsub,cloudresourcemanager.googleapis.com,appengine.googleapis.com,cloudscheduler.googleapis.com,cloudbuild.googleapis.com/readme.md)
 
 ![](2021-06-21-17-01-35.png)
 
@@ -59,7 +59,7 @@ export GOOGLE_APPLICATION_CREDENTIALS="KEY_PATH"
 
 ### Create a Cloud Storage bucket
 
-https://cloud.google.com/storage/docs/gsutil/commands/mb
+[https://cloud.google.com/storage/docs/gsutil/commands/mb](/https:§§cloud.google.com§storage§docs§gsutil§commands§mb/readme.md)
 
 ```bash
 export BUCKET="my-storage-bucket"
@@ -77,7 +77,7 @@ gcloud pubsub subscriptions create --topic $TOPIC $SUBSCRIPTION
 ```
 ![](2021-06-22-09-51-02.png)
 
-https://cloud.google.com/sdk/gcloud/reference/pubsub/topics/create
+[https://cloud.google.com/sdk/gcloud/reference/pubsub/topics/create](/https:§§cloud.google.com§sdk§gcloud§reference§pubsub§topics§create/readme.md)
 
 ### Create a Cloud Scheduler job
 
@@ -107,7 +107,7 @@ gcloud scheduler jobs run negative-ratings-publisher
 
 ### Create a BigQuery dataset
 
-https://cloud.google.com/bigquery/docs/reference/bq-cli-reference#bq_mk
+[https://cloud.google.com/bigquery/docs/reference/bq-cli-reference#bq_mk](/https:§§cloud.google.com§bigquery§docs§reference§bq-cli-reference#bq_mk/readme.md)
 
 ```bash
 export PROJECT="$(gcloud config get-value project)"
@@ -134,7 +134,7 @@ export TEMPLATE_IMAGE="gcr.io/$PROJECT/samples/dataflow/streaming-beam-sql:lates
 
 ## Setting up your development environment
 
-https://cloud.google.com/python/docs/setup#installing_python
+[https://cloud.google.com/python/docs/setup#installing_python](/https:§§cloud.google.com§python§docs§setup#installing_python/readme.md)
 
 ## Python only: Creating and building a container image
 
@@ -144,7 +144,7 @@ https://cloud.google.com/python/docs/setup#installing_python
 gcloud config set builds/use_kaniko True
 ```
 
-https://cloud.google.com/build/docs/kaniko-cache
+[https://cloud.google.com/build/docs/kaniko-cache](/https:§§cloud.google.com§build§docs§kaniko-cache/readme.md)
 
 
 - [X] create docker file 
@@ -182,7 +182,7 @@ https://cloud.google.com/build/docs/kaniko-cache
 gcloud builds submit --tag $TEMPLATE_IMAGE .
 ```
 
-https://cloud.google.com/build/docs/quickstart-build#build_using_dockerfile
+[https://cloud.google.com/build/docs/quickstart-build#build_using_dockerfile](/https:§§cloud.google.com§build§docs§quickstart-build#build_using_dockerfile/readme.md)
 
 ![](2021-06-22-16-07-37.png)
 ![](2021-06-22-16-11-24.png)
@@ -200,7 +200,7 @@ To run a template, you need to create a template spec file in a Cloud Storage co
 - description
 - input parameters
 
-https://github.com/GoogleCloudPlatform/java-docs-samples/blob/master/dataflow/flex-templates/streaming_beam_sql/metadata.json
+[https://github.com/GoogleCloudPlatform/java-docs-samples/blob/master/dataflow/flex-templates/streaming_beam_sql/metadata.json](/https:§§github.com§GoogleCloudPlatform§java-docs-samples§blob§master§dataflow§flex-templates§streaming_beam_sql§metadata.json/readme.md)
 
 > sample copied [here](./streaming_beam/metadata.json)
 

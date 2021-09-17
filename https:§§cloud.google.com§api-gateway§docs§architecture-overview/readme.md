@@ -32,7 +32,7 @@ check authentication
 report to logging
 
 - cloud sdk
-https://cloud.google.com/sdk/ to use `gcloud` 
+[https://cloud.google.com/sdk/ to use `gcloud` ](/https:§§cloud.google.com§sdk§ to use `gcloud` /readme.md)
 
 - Cloud Console
 monitoring and logging data recorded by service control

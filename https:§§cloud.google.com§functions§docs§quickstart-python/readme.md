@@ -27,7 +27,7 @@ def hello_world(request):
 
 enable api
 Enable the Cloud Functions and Cloud Build APIs. Enable the APIs
-https://console.cloud.google.com/flows/enableapi?apiid=cloudfunctions,cloudbuild.googleapis.com&redirect=https://cloud.google.com/functions/docs/quickstart-python&_ga=2.72723475.1808267204.1624474724-1468234203.1624256121
+[https://console.cloud.google.com/flows/enableapi?apiid=cloudfunctions,cloudbuild.googleapis.com&redirect=https://cloud.google.com/functions/docs/quickstart-python&_ga=2.72723475.1808267204.1624474724-1468234203.1624256121](/https:§§console.cloud.google.com§flows§enableapi?apiid=cloudfunctions,cloudbuild.googleapis.com&redirect=https:§§cloud.google.com§functions§docs§quickstart-python&_ga=2.72723475.1808267204.1624474724-1468234203.1624256121/readme.md)
 
 ![](2021-06-24-14-12-25.png)
 
@@ -51,7 +51,7 @@ deploy
 ![](2021-06-24-14-19-00.png)
 
 trigger url
-https://us-central1-coherent-vim-317506.cloudfunctions.net/function-1
+[https://us-central1-coherent-vim-317506.cloudfunctions.net/function-1](/https:§§us-central1-coherent-vim-317506.cloudfunctions.net§function-1/readme.md)
 
 change trigger event
 

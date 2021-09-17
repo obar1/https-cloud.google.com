@@ -10,7 +10,7 @@ enable `big query api`
 ## Examine a table
 
 public sample
-https://console.cloud.google.com/bigquery?p=bigquery-public-data&d=samples
+[https://console.cloud.google.com/bigquery?p=bigquery-public-data&d=samples](/https:§§console.cloud.google.com§bigquery?p=bigquery-public-data&d=samples/readme.md)
 
 examine
 ```
@@ -84,6 +84,6 @@ bq rm --recursive=true babynames
 ## Next
 
 [`here`](../https:§§cloud.google.com§bigquery§docs§bq-command-line-tool/readme.md)
-https://cloud.google.com/bigquery/docs/loading-data
-https://cloud.google.com/bigquery/docs/query-overview
-https://cloud.google.com/bigquery/docs/reference/libraries
+[https://cloud.google.com/bigquery/docs/loading-data](/https:§§cloud.google.com§bigquery§docs§loading-data/readme.md)
+[https://cloud.google.com/bigquery/docs/query-overview](/https:§§cloud.google.com§bigquery§docs§query-overview/readme.md)
+[https://cloud.google.com/bigquery/docs/reference/libraries](/https:§§cloud.google.com§bigquery§docs§reference§libraries/readme.md)

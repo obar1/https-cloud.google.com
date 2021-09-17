@@ -3,7 +3,7 @@
 
 ## Before you begin
 
-https://console.cloud.google.com/apis/library/sqladmin.googleapis.com?project=coherent-vim-317506
+[https://console.cloud.google.com/apis/library/sqladmin.googleapis.com?project=coherent-vim-317506](/https:§§console.cloud.google.com§apis§library§sqladmin.googleapis.com?project=coherent-vim-317506/readme.md)
 
 ![](2021-07-05-18-02-27.png)
 
@@ -13,7 +13,7 @@ Make sure you have the Cloud SQL Admin and Compute Viewer roles on your user acc
 
 ## Creating a MySQL instance
 
-https://console.cloud.google.com/sql/instances
+[https://console.cloud.google.com/sql/instances](/https:§§console.cloud.google.com§sql§instances/readme.md)
 
 ![](2021-07-05-17-52-24.png)
 
@@ -39,11 +39,11 @@ finer granule
 
 FIXME:  check it 
 
-https://github.com/dbcli/mycli
+[https://github.com/dbcli/mycli](/https:§§github.com§dbcli§mycli/readme.md)
 
 or 
 
-https://www.mysql.com/products/workbench/
+[https://www.mysql.com/products/workbench/](/https:§§www.mysql.com§products§workbench§/readme.md)
 ```
 brew install --cask mysqlworkbench
 ```
@@ -59,7 +59,7 @@ coherent-vim-317506:us-central1:com-obar1-mysql-000
 ![](2021-07-05-18-19-31.png)
 
 note  in gcp 
-https://stackoverflow.com/questions/53468831/how-do-i-install-python-3-7-in-google-cloud-shell
+[https://stackoverflow.com/questions/53468831/how-do-i-install-python-3-7-in-google-cloud-shell](/https:§§stackoverflow.com§questions§53468831§how-do-i-install-python-3-7-in-google-cloud-shell/readme.md)
 
 ```
 # install pyenv to install python on persistent home directory

@@ -8,7 +8,7 @@ API Gateway enables you to provide secure access to your backend services throug
 
 [`here`](../https:§§cloud.google.com§api-gateway§docs§quickstart/readme.md)
 
-https://cloud.google.com/api-gateway/docs/quickstart-console 
+[https://cloud.google.com/api-gateway/docs/quickstart-console ](/https:§§cloud.google.com§api-gateway§docs§quickstart-console /readme.md)
 SKIP: done the same in the quickstart
 
 [`here`](../https:§§cloud.google.com§api-gateway§docs§authentication-method/readme.md)

@@ -1,7 +1,7 @@
 # https:§§cloud.google.com§api-gateway§docs§openapi-overview
 > https://cloud.google.com/api-gateway/docs/openapi-overview
 
-https://swagger.io/docs/specification/2-0/basic-structure/
+[https://swagger.io/docs/specification/2-0/basic-structure/](/https:§§swagger.io§docs§specification§2-0§basic-structure§/readme.md)
 
 
 ex
@@ -35,5 +35,5 @@ ex
 ```
 
 collection 
-https://apis.guru/awesome-openapi3/
+[https://apis.guru/awesome-openapi3/](/https:§§apis.guru§awesome-openapi3§/readme.md)
 

@@ -4,7 +4,7 @@
 
 ## Cloud Monitoring: Qwik Start
 
-https://google.qwiklabs.com/focuses/10599?parent=catalog
+[https://google.qwiklabs.com/focuses/10599?parent=catalog](/https:§§google.qwiklabs.com§focuses§10599?parent=catalog/readme.md)
 
 ## Cloud Monitoring: Qwik Start
 
@@ -13,7 +13,7 @@ https://google.qwiklabs.com/focuses/10599?parent=catalog
 
 ## Monitoring and Logging for Cloud Functions
 
-https://googlecourses.qwiklabs.com/focuses/11617?parent=catalog
+[https://googlecourses.qwiklabs.com/focuses/11617?parent=catalog](/https:§§googlecourses.qwiklabs.com§focuses§11617?parent=catalog/readme.md)
 
 ### Setup and requirements
 
@@ -27,7 +27,7 @@ gcloud config list project
 
 ### Viewing Cloud Function logs & metrics in Cloud monitoring
 
-https://cloud.google.com/sdk/gcloud
+[https://cloud.google.com/sdk/gcloud](/https:§§cloud.google.com§sdk§gcloud/readme.md)
 TODO: doit 
 
 ![](2021-07-07-06-40-41.png)

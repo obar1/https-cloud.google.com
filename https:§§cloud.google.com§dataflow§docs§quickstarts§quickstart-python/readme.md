@@ -96,8 +96,8 @@ verify pipeline is running and the results
 
 cloud console
 check
-https://console.cloud.google.com/dataflow
-https://console.cloud.google.com/storage/
+[https://console.cloud.google.com/dataflow](/https:§§console.cloud.google.com§dataflow/readme.md)
+[https://console.cloud.google.com/storage/](/https:§§console.cloud.google.com§storage§/readme.md)
 
 local terminal
 check

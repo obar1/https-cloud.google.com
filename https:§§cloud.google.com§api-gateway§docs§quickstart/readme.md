@@ -26,7 +26,7 @@ check https://cloud.google.com/sdk/gcloud/reference/services
 
 API Gateway sits in front of a deployed backend service and handles all incoming requests. In this quickstart, API Gateway routes incoming calls to a Cloud Function backend named helloGET that contains the function shown below:
 
-https://cloud.google.com/functions/docs/quickstart
+[https://cloud.google.com/functions/docs/quickstart](/https:§§cloud.google.com§functions§docs§quickstart/readme.md)
 
 ![](2021-07-16-07-03-39.png)
 ![](2021-07-15-17-22-26.png)
@@ -146,9 +146,9 @@ You have successfully created and deployed an API Gateway!
 ## Securing access by using an API key
 
 To secure access to your API backend, generate an API key associated with your project and grant that key access to call your API
-https://cloud.google.com/endpoints/docs/openapi/restricting-api-access-with-api-keys
+[https://cloud.google.com/endpoints/docs/openapi/restricting-api-access-with-api-keys](/https:§§cloud.google.com§endpoints§docs§openapi§restricting-api-access-with-api-keys/readme.md)
 If you do not already have an API key associated with the Google Cloud project you are using in this quickstart, you can add one by following the steps at Creating an API Key. 
-https://cloud.google.com/docs/authentication/api-keys#creating_an_api_key
+[https://cloud.google.com/docs/authentication/api-keys#creating_an_api_key](/https:§§cloud.google.com§docs§authentication§api-keys#creating_an_api_key/readme.md)
 
 ![](2021-07-16-07-40-14.png)
 
