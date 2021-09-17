@@ -80,6 +80,7 @@
 1. <https://cloud.google.com/sql/docs/mysql/quickstart> :o: [`here`](./https:§§cloud.google.com§sql§docs§mysql§quickstart/readme.md)
 1. <https://cloud.google.com/sql> :o: [`here`](./https:§§cloud.google.com§sql/readme.md)
 1. <https://cloud.google.com/storage> :o: [`here`](./https:§§cloud.google.com§storage/readme.md)
+1. <https://cloud.google.com/xxx> :o: [`here`](./https:§§cloud.google.com§xxx/readme.md)
 1. <https://google.qwiklabs.com/quests/35> :o: [`here`](./https:§§google.qwiklabs.com§quests§35/readme.md)
 1. <https://google.qwiklabs.com/quests/81> :o: [`here`](./https:§§google.qwiklabs.com§quests§81/readme.md)
 
